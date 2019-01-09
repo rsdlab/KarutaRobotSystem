@@ -1,0 +1,154 @@
+2018-12-22 09:19:16,488 manager INFO 1.1.0
+2018-12-22 09:19:16,488 manager INFO Copyright (C) 2003-2010
+2018-12-22 09:19:16,488 manager INFO   Noriaki Ando
+2018-12-22 09:19:16,489 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-22 09:19:16,489 manager INFO Manager starting.
+2018-12-22 09:19:16,489 manager INFO Starting local logging.
+2018-12-22 09:19:16,489 manager DEBUG corba.args: -ORBgiopMaxMsgSize 4194304
+2018-12-22 09:19:16,489 manager DEBUG corba.endpoint: 
+2018-12-22 09:19:16,489 manager DEBUG manager.is_master: NO
+2018-12-22 09:19:16,489 manager DEBUG corba.id: omniORB
+2018-12-22 09:19:16,493 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-22 09:19:16,495 ManagerServant DEBUG corbaloc: corbaloc:iiop:localhost:2810/manager
+2018-12-22 09:19:16,495 ManagerServant DEBUG Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerServant.py", line 944, in findManager
+    mgr = mobj._narrow(RTM.Manager)
+  File "/usr/lib/python2.7/dist-packages/omniORB/CORBA.py", line 798, in _narrow
+    return _omnipy.narrow(self, repoId, 1)
+TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+
+2018-12-22 09:19:16,495 ManagerServant INFO Master manager not found
+2018-12-22 09:19:16,495 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-22 09:19:16,495 LocalServiceAdmin DEBUG Available services: 
+2018-12-22 09:19:16,495 manager DEBUG LocalServiceAdmin's properties:
+2018-12-22 09:19:16,495 manager DEBUG - enabled_services: ALL
+
+2018-12-22 09:19:16,497 SdoServiceAdmin DEBUG sdo.service.provider.enabled_services: 
+2018-12-22 09:19:16,497 SdoServiceAdmin DEBUG sdo.service.provider.available_services: 
+2018-12-22 09:19:16,497 SdoServiceAdmin DEBUG sdo.service.consumer.enabled_services: 
+2018-12-22 09:19:16,497 SdoServiceAdmin DEBUG sdo.service.consumer.available_services: 
+2018-12-22 09:19:16,498 inImage DEBUG Port name: inImage
+2018-12-22 09:19:16,498 inImage DEBUG setting port.port_type: DataInPort
+2018-12-22 09:19:16,498 inImage DEBUG setting port.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 09:19:16,498 inString DEBUG Port name: inString
+2018-12-22 09:19:16,498 inString DEBUG setting port.port_type: DataInPort
+2018-12-22 09:19:16,498 inString DEBUG setting port.data_type: IDL:RTC/TimedString:1.0
+2018-12-22 09:19:16,498 outImage DEBUG Port name: outImage
+2018-12-22 09:19:16,498 outImage DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:19:16,498 outImage DEBUG setting dataport.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 09:19:16,498 outImage DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:19:16,498 outObjectParam DEBUG Port name: outObjectParam
+2018-12-22 09:19:16,498 outObjectParam DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:19:16,498 outObjectParam DEBUG setting dataport.data_type: IDL:ObjectRecognition/TimedObjectParamSeq:1.0
+2018-12-22 09:19:16,498 outObjectParam DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:19:16,499 outFlag DEBUG Port name: outFlag
+2018-12-22 09:19:16,499 outFlag DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:19:16,499 outFlag DEBUG setting dataport.data_type: IDL:RTC/TimedLong:1.0
+2018-12-22 09:19:16,499 outFlag DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:19:16,499 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-22 09:19:16,499 manager DEBUG - exec_cxt
+  - periodic
+    - rate: 1000.0
+
+2018-12-22 09:19:16,500 rtobject DEBUG getContextOptions()
+2018-12-22 09:19:16,500 rtobject DEBUG Global EC options are specified.
+2018-12-22 09:19:16,500 rtobject DEBUG - type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:19:16,500 rtobject DEBUG Copying inherited EC options.
+2018-12-22 09:19:16,500 rtobject DEBUG No component specific EC specified.
+2018-12-22 09:19:16,500 periodic_ecprofile DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 09:19:16,501 ec_base INFO setRate(1000000.000000) done
+2018-12-22 09:19:16,501 ec_base DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 09:19:16,501 rtobject DEBUG EC (PeriodicExecutionContext) created.
+2018-12-22 09:19:16,501 ec_base DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:19:16,501 ec_base INFO setRate(1000.000000) done
+2018-12-22 09:19:16,501 ec_base DEBUG Transition Mode: sync_transition = YES
+2018-12-22 09:19:16,501 ec_base DEBUG Configuration sync_activation not found.
+2018-12-22 09:19:16,501 ec_base DEBUG Configuration sync_deactivation not found.
+2018-12-22 09:19:16,501 ec_base DEBUG Configuration sync_reset not found.
+2018-12-22 09:19:16,501 ec_base DEBUG Timeout (transition_timeout): 0.500000 [s]
+2018-12-22 09:19:16,501 ec_base DEBUG Configuration activation_timeout not found.
+2018-12-22 09:19:16,501 ec_base DEBUG Configuration deactivation_timeout not found.
+2018-12-22 09:19:16,501 ec_base DEBUG Configuration reset_timeout not found.
+2018-12-22 09:19:16,501 ec_base DEBUG ExecutionContext's configurations:
+2018-12-22 09:19:16,501 ec_base DEBUG Exec rate   : 1000.000000 [Hz]
+2018-12-22 09:19:16,501 ec_base DEBUG Activation  : Sync = YES, Timeout = 0.500000
+2018-12-22 09:19:16,501 ec_base DEBUG Deactivation: Sync = YES, Timeout = 0.500000
+2018-12-22 09:19:16,501 ec_base DEBUG Reset       : Sync = YES, Timeout = 0.500000
+2018-12-22 09:19:16,501 periodic_ecprofile DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:19:16,501 ec_worker DEBUG bindContext returns id = 0
+2018-12-22 09:19:16,502 ec_worker DEBUG bindComponent() succeeded.
+2018-12-22 09:19:16,502 rtobject INFO 1 execution context was created.
+2018-12-22 09:19:16,502 rtobject DEBUG Calling onInitialize().
+2018-12-22 09:19:16,502 inImage DEBUG single buffer mode.
+2018-12-22 09:19:16,502 inImage DEBUG available providers: corba_cdr
+2018-12-22 09:19:16,502 inImage DEBUG dataflow_type push is supported
+2018-12-22 09:19:16,502 inImage DEBUG available consumers: corba_cdr
+2018-12-22 09:19:16,503 inString DEBUG single buffer mode.
+2018-12-22 09:19:16,503 inString DEBUG available providers: corba_cdr
+2018-12-22 09:19:16,503 inString DEBUG dataflow_type push is supported
+2018-12-22 09:19:16,503 inString DEBUG available consumers: corba_cdr
+2018-12-22 09:19:16,504 outImage DEBUG dataflow_type pull is supported
+2018-12-22 09:19:16,505 outObjectParam DEBUG dataflow_type pull is supported
+2018-12-22 09:19:16,505 outFlag DEBUG dataflow_type pull is supported
+2018-12-22 09:19:16,506 rtobject DEBUG onInitialize() succeeded.
+2018-12-22 09:19:16,506 rtobject DEBUG Active configuration set: default exists.
+2018-12-22 09:19:16,506 rtobject INFO Initial active configuration set is default.
+2018-12-22 09:19:16,506 rtobject DEBUG on_initialize() was properly done.
+2018-12-22 09:19:16,506 rtobject DEBUG EC[0] starting.
+2018-12-22 09:19:16,506 ec_worker DEBUG 1 components started.
+2018-12-22 09:19:19,132 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:19,679 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:19,680 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-22 09:19:19,680 SdoServiceAdmin ERROR type  already exists.
+2018-12-22 09:19:19,681 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-22 09:19:19,681 SdoServiceAdmin ERROR type 4b6fa62a-fde7-49f7-8a24-119c091ea148 already exists.
+2018-12-22 09:19:20,674 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:21,674 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:22,100 inImage DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 09:19:22,100 inImage DEBUG interface_type: corba_cdr
+2018-12-22 09:19:22,100 inImage DEBUG provider created
+2018-12-22 09:19:22,100 inImage DEBUG publishInterfaces() successfully finished.
+2018-12-22 09:19:22,101 inImage DEBUG dataflow_type = push .... do nothing
+2018-12-22 09:19:22,101 inImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:19:22,677 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:23,677 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:24,675 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:25,445 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 09:19:25,719 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:26,679 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:27,729 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:27,898 inString DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 09:19:27,898 inString DEBUG interface_type: corba_cdr
+2018-12-22 09:19:27,898 inString DEBUG provider created
+2018-12-22 09:19:27,899 inString DEBUG publishInterfaces() successfully finished.
+2018-12-22 09:19:27,900 inString DEBUG dataflow_type = push .... do nothing
+2018-12-22 09:19:27,900 inString DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:19:28,724 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:29,723 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:30,718 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:31,617 outImage DEBUG interface_type: corba_cdr
+2018-12-22 09:19:31,617 outImage DEBUG consumer created
+2018-12-22 09:19:31,618 outImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:19:31,687 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:32,706 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:33,693 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:34,672 outFlag DEBUG interface_type: corba_cdr
+2018-12-22 09:19:34,673 outFlag DEBUG consumer created
+2018-12-22 09:19:34,673 outFlag DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:19:34,713 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:35,682 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:19:35,888 ec_worker DEBUG Component found in the EC.
+2018-12-22 09:19:35,889 ec_worker DEBUG Component is in INACTIVE state. Going to ACTIVE state.
+2018-12-22 09:19:35,889 ec_worker DEBUG activateComponent() done.
+2018-12-22 09:19:35,889 ec_base DEBUG Synchronous activation mode. Waiting for the RTC to be ACTIVE state. 
+2018-12-22 09:19:35,890 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)

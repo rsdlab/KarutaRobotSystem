@@ -1,0 +1,121 @@
+2018-12-22 09:20:30,272 manager INFO 1.1.0
+2018-12-22 09:20:30,272 manager INFO Copyright (C) 2003-2010
+2018-12-22 09:20:30,272 manager INFO   Noriaki Ando
+2018-12-22 09:20:30,272 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-22 09:20:30,272 manager INFO Manager starting.
+2018-12-22 09:20:30,272 manager INFO Starting local logging.
+2018-12-22 09:20:30,272 manager DEBUG corba.args: -ORBgiopMaxMsgSize 4194304
+2018-12-22 09:20:30,272 manager DEBUG corba.endpoint: 
+2018-12-22 09:20:30,272 manager DEBUG manager.is_master: NO
+2018-12-22 09:20:30,272 manager DEBUG corba.id: omniORB
+2018-12-22 09:20:30,276 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-22 09:20:30,277 ManagerServant DEBUG corbaloc: corbaloc:iiop:localhost:2810/manager
+2018-12-22 09:20:30,277 ManagerServant DEBUG Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerServant.py", line 944, in findManager
+    mgr = mobj._narrow(RTM.Manager)
+  File "/usr/lib/python2.7/dist-packages/omniORB/CORBA.py", line 798, in _narrow
+    return _omnipy.narrow(self, repoId, 1)
+TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+
+2018-12-22 09:20:30,277 ManagerServant INFO Master manager not found
+2018-12-22 09:20:30,278 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-22 09:20:30,278 LocalServiceAdmin DEBUG Available services: 
+2018-12-22 09:20:30,278 manager DEBUG LocalServiceAdmin's properties:
+2018-12-22 09:20:30,278 manager DEBUG - enabled_services: ALL
+
+2018-12-22 09:20:30,279 SdoServiceAdmin DEBUG sdo.service.provider.enabled_services: 
+2018-12-22 09:20:30,279 SdoServiceAdmin DEBUG sdo.service.provider.available_services: 
+2018-12-22 09:20:30,279 SdoServiceAdmin DEBUG sdo.service.consumer.enabled_services: 
+2018-12-22 09:20:30,279 SdoServiceAdmin DEBUG sdo.service.consumer.available_services: 
+2018-12-22 09:20:30,279 inImage DEBUG Port name: inImage
+2018-12-22 09:20:30,279 inImage DEBUG setting port.port_type: DataInPort
+2018-12-22 09:20:30,279 inImage DEBUG setting port.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 09:20:30,280 inString DEBUG Port name: inString
+2018-12-22 09:20:30,280 inString DEBUG setting port.port_type: DataInPort
+2018-12-22 09:20:30,280 inString DEBUG setting port.data_type: IDL:RTC/TimedString:1.0
+2018-12-22 09:20:30,280 outImage DEBUG Port name: outImage
+2018-12-22 09:20:30,280 outImage DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:20:30,280 outImage DEBUG setting dataport.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 09:20:30,280 outImage DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:20:30,280 outObjectParam DEBUG Port name: outObjectParam
+2018-12-22 09:20:30,280 outObjectParam DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:20:30,280 outObjectParam DEBUG setting dataport.data_type: IDL:ObjectRecognition/TimedObjectParamSeq:1.0
+2018-12-22 09:20:30,280 outObjectParam DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:20:30,280 outFlag DEBUG Port name: outFlag
+2018-12-22 09:20:30,280 outFlag DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:20:30,280 outFlag DEBUG setting dataport.data_type: IDL:RTC/TimedLong:1.0
+2018-12-22 09:20:30,280 outFlag DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:20:30,281 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-22 09:20:30,281 manager DEBUG - exec_cxt
+  - periodic
+    - rate: 1000.0
+
+2018-12-22 09:20:30,282 rtobject DEBUG getContextOptions()
+2018-12-22 09:20:30,282 rtobject DEBUG Global EC options are specified.
+2018-12-22 09:20:30,282 rtobject DEBUG - type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:20:30,282 rtobject DEBUG Copying inherited EC options.
+2018-12-22 09:20:30,282 rtobject DEBUG No component specific EC specified.
+2018-12-22 09:20:30,282 periodic_ecprofile DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 09:20:30,282 ec_base INFO setRate(1000000.000000) done
+2018-12-22 09:20:30,282 ec_base DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 09:20:30,282 rtobject DEBUG EC (PeriodicExecutionContext) created.
+2018-12-22 09:20:30,282 ec_base DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:20:30,282 ec_base INFO setRate(1000.000000) done
+2018-12-22 09:20:30,282 ec_base DEBUG Transition Mode: sync_transition = YES
+2018-12-22 09:20:30,282 ec_base DEBUG Configuration sync_activation not found.
+2018-12-22 09:20:30,282 ec_base DEBUG Configuration sync_deactivation not found.
+2018-12-22 09:20:30,282 ec_base DEBUG Configuration sync_reset not found.
+2018-12-22 09:20:30,282 ec_base DEBUG Timeout (transition_timeout): 0.500000 [s]
+2018-12-22 09:20:30,282 ec_base DEBUG Configuration activation_timeout not found.
+2018-12-22 09:20:30,282 ec_base DEBUG Configuration deactivation_timeout not found.
+2018-12-22 09:20:30,282 ec_base DEBUG Configuration reset_timeout not found.
+2018-12-22 09:20:30,282 ec_base DEBUG ExecutionContext's configurations:
+2018-12-22 09:20:30,283 ec_base DEBUG Exec rate   : 1000.000000 [Hz]
+2018-12-22 09:20:30,283 ec_base DEBUG Activation  : Sync = YES, Timeout = 0.500000
+2018-12-22 09:20:30,283 ec_base DEBUG Deactivation: Sync = YES, Timeout = 0.500000
+2018-12-22 09:20:30,283 ec_base DEBUG Reset       : Sync = YES, Timeout = 0.500000
+2018-12-22 09:20:30,283 periodic_ecprofile DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:20:30,283 ec_worker DEBUG bindContext returns id = 0
+2018-12-22 09:20:30,283 ec_worker DEBUG bindComponent() succeeded.
+2018-12-22 09:20:30,283 rtobject INFO 1 execution context was created.
+2018-12-22 09:20:30,283 rtobject DEBUG Calling onInitialize().
+2018-12-22 09:20:30,283 inImage DEBUG single buffer mode.
+2018-12-22 09:20:30,283 inImage DEBUG available providers: corba_cdr
+2018-12-22 09:20:30,284 inImage DEBUG dataflow_type push is supported
+2018-12-22 09:20:30,284 inImage DEBUG available consumers: corba_cdr
+2018-12-22 09:20:30,284 inString DEBUG single buffer mode.
+2018-12-22 09:20:30,284 inString DEBUG available providers: corba_cdr
+2018-12-22 09:20:30,284 inString DEBUG dataflow_type push is supported
+2018-12-22 09:20:30,284 inString DEBUG available consumers: corba_cdr
+2018-12-22 09:20:30,285 outImage DEBUG dataflow_type pull is supported
+2018-12-22 09:20:30,285 outObjectParam DEBUG dataflow_type pull is supported
+2018-12-22 09:20:30,286 outFlag DEBUG dataflow_type pull is supported
+2018-12-22 09:20:30,286 rtobject DEBUG onInitialize() succeeded.
+2018-12-22 09:20:30,286 rtobject DEBUG Active configuration set: default exists.
+2018-12-22 09:20:30,286 rtobject INFO Initial active configuration set is default.
+2018-12-22 09:20:30,286 rtobject DEBUG on_initialize() was properly done.
+2018-12-22 09:20:30,286 rtobject DEBUG EC[0] starting.
+2018-12-22 09:20:30,286 ec_worker DEBUG 1 components started.
+2018-12-22 09:20:32,017 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:20:32,399 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:20:32,404 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-22 09:20:32,404 SdoServiceAdmin ERROR type  already exists.
+2018-12-22 09:20:32,406 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-22 09:20:32,407 SdoServiceAdmin ERROR type 70753231-0c4d-4db3-8ccb-f733463f028f already exists.
+2018-12-22 09:20:32,728 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:20:33,729 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:20:34,612 ec_worker DEBUG Component found in the EC.
+2018-12-22 09:20:34,612 ec_worker DEBUG Component is in INACTIVE state. Going to ACTIVE state.
+2018-12-22 09:20:34,612 ec_worker DEBUG activateComponent() done.
+2018-12-22 09:20:34,612 ec_base DEBUG Synchronous activation mode. Waiting for the RTC to be ACTIVE state. 
+2018-12-22 09:20:34,612 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)

@@ -1,0 +1,69 @@
+ 
+
+if (m_BidNameIn.isNew())
+  {
+	m_BidNameIn.read();
+	std::string bidName = m_BidName.data;
+
+  	switch(c){
+  
+  	case 0:
+  	m_rid=m_ManipulatorCommonInterface_Common->servoON();
+  	if(m_rid->id != 0){//Error
+  	    std::cout<<"Servo ON ERROR"<<std::endl;
+  	    std::cout<<m_rid->comment<<std::endl<<std::endl;
+  	}
+    	c = 1;
+    	break;
+    
+    	case 1:
+    //	if(bidName.empty()){
+    	c = 1;
+    	}else{
+    	c = 2;
+    	}
+    
+    	case 2:
+    	JARA_ARM::JointPos jointPoint;
+    	jointPoint.length(4);
+    	if(a % 2 == 0){
+    	jointPoint[0] = 45;
+    	jointPoint[1] = 0;
+    	jointPoint[2] = 0;
+    	jointPoint[3] = 0;
+    	}
+    	else{
+    	jointPoint[1] = -45;
+    	jointPoint[2] = 0;
+   	jointPoint[3] = 0;
+    	jointPoint[4] = 0;
+    	}
+    
+    	if(m_RecognitionSignal == 1){
+    	c = 3;
+    	break;
+    	}
+    
+    	if(m_EndSignal == 1){
+    	c = 3;
+    	break;
+    	}
+    
+   	m_rid=m_ManipulatorCommonInterface_Middle->movePTPJointAbs(jointPoint);
+      	if(m_rid->id != 0){//Error
+	std::cout<<"movePTPJointAbs ERROR"<<std::endl;
+	std::cout<<m_rid->comment<<std::endl<<std::endl;
+     	}
+    	a++;
+    	sleep(1); 
+    	break;   
+    
+    	case 3:
+    	m_SearchEndSignal = 1;
+    	c = 0;
+   	m_BidName = 0;
+    	m_EndSignal = 0;
+    	m_RecognitionSignal = 0;
+    	break;
+  	}  
+  }

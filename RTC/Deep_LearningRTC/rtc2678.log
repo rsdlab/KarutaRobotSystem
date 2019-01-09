@@ -1,0 +1,108 @@
+2018-12-26 07:13:27,511 manager INFO 1.1.0
+2018-12-26 07:13:27,511 manager INFO Copyright (C) 2003-2010
+2018-12-26 07:13:27,511 manager INFO   Noriaki Ando
+2018-12-26 07:13:27,511 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-26 07:13:27,511 manager INFO Manager starting.
+2018-12-26 07:13:27,511 manager INFO Starting local logging.
+2018-12-26 07:13:27,511 manager DEBUG corba.args: -ORBgiopMaxMsgSize 4194304
+2018-12-26 07:13:27,512 manager DEBUG corba.endpoint: 
+2018-12-26 07:13:27,512 manager DEBUG manager.is_master: NO
+2018-12-26 07:13:27,512 manager DEBUG corba.id: omniORB
+2018-12-26 07:13:27,516 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-26 07:13:27,520 ManagerServant DEBUG corbaloc: corbaloc:iiop:localhost:2810/manager
+2018-12-26 07:13:27,521 ManagerServant DEBUG Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerServant.py", line 944, in findManager
+    mgr = mobj._narrow(RTM.Manager)
+  File "/usr/lib/python2.7/dist-packages/omniORB/CORBA.py", line 798, in _narrow
+    return _omnipy.narrow(self, repoId, 1)
+TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+
+2018-12-26 07:13:27,521 ManagerServant INFO Master manager not found
+2018-12-26 07:13:27,522 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-26 07:13:27,522 LocalServiceAdmin DEBUG Available services: 
+2018-12-26 07:13:27,522 manager DEBUG LocalServiceAdmin's properties:
+2018-12-26 07:13:27,522 manager DEBUG - enabled_services: ALL
+
+2018-12-26 07:13:27,525 SdoServiceAdmin DEBUG sdo.service.provider.enabled_services: 
+2018-12-26 07:13:27,525 SdoServiceAdmin DEBUG sdo.service.provider.available_services: 
+2018-12-26 07:13:27,525 SdoServiceAdmin DEBUG sdo.service.consumer.enabled_services: 
+2018-12-26 07:13:27,525 SdoServiceAdmin DEBUG sdo.service.consumer.available_services: 
+2018-12-26 07:13:27,525 inImage DEBUG Port name: inImage
+2018-12-26 07:13:27,525 inImage DEBUG setting port.port_type: DataInPort
+2018-12-26 07:13:27,525 inImage DEBUG setting port.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-26 07:13:27,525 inString DEBUG Port name: inString
+2018-12-26 07:13:27,526 inString DEBUG setting port.port_type: DataInPort
+2018-12-26 07:13:27,526 inString DEBUG setting port.data_type: IDL:RTC/TimedString:1.0
+2018-12-26 07:13:27,526 outImage DEBUG Port name: outImage
+2018-12-26 07:13:27,526 outImage DEBUG setting port.port_type: DataOutPort
+2018-12-26 07:13:27,526 outImage DEBUG setting dataport.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-26 07:13:27,526 outImage DEBUG available subscription_type: flush, new, periodic
+2018-12-26 07:13:27,526 outObjectParam DEBUG Port name: outObjectParam
+2018-12-26 07:13:27,526 outObjectParam DEBUG setting port.port_type: DataOutPort
+2018-12-26 07:13:27,526 outObjectParam DEBUG setting dataport.data_type: IDL:ObjectRecognition/TimedObjectParamSeq:1.0
+2018-12-26 07:13:27,526 outObjectParam DEBUG available subscription_type: flush, new, periodic
+2018-12-26 07:13:27,527 outFlag DEBUG Port name: outFlag
+2018-12-26 07:13:27,527 outFlag DEBUG setting port.port_type: DataOutPort
+2018-12-26 07:13:27,527 outFlag DEBUG setting dataport.data_type: IDL:RTC/TimedLong:1.0
+2018-12-26 07:13:27,527 outFlag DEBUG available subscription_type: flush, new, periodic
+2018-12-26 07:13:27,528 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-26 07:13:27,528 manager DEBUG - exec_cxt
+  - periodic
+    - rate: 1000.0
+
+2018-12-26 07:13:27,529 rtobject DEBUG getContextOptions()
+2018-12-26 07:13:27,529 rtobject DEBUG Global EC options are specified.
+2018-12-26 07:13:27,529 rtobject DEBUG - type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-26 07:13:27,530 rtobject DEBUG Copying inherited EC options.
+2018-12-26 07:13:27,530 rtobject DEBUG No component specific EC specified.
+2018-12-26 07:13:27,530 periodic_ecprofile DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-26 07:13:27,530 ec_base INFO setRate(1000000.000000) done
+2018-12-26 07:13:27,530 ec_base DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-26 07:13:27,530 rtobject DEBUG EC (PeriodicExecutionContext) created.
+2018-12-26 07:13:27,530 ec_base DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-26 07:13:27,530 ec_base INFO setRate(1000.000000) done
+2018-12-26 07:13:27,530 ec_base DEBUG Transition Mode: sync_transition = YES
+2018-12-26 07:13:27,530 ec_base DEBUG Configuration sync_activation not found.
+2018-12-26 07:13:27,530 ec_base DEBUG Configuration sync_deactivation not found.
+2018-12-26 07:13:27,531 ec_base DEBUG Configuration sync_reset not found.
+2018-12-26 07:13:27,531 ec_base DEBUG Timeout (transition_timeout): 0.500000 [s]
+2018-12-26 07:13:27,531 ec_base DEBUG Configuration activation_timeout not found.
+2018-12-26 07:13:27,531 ec_base DEBUG Configuration deactivation_timeout not found.
+2018-12-26 07:13:27,531 ec_base DEBUG Configuration reset_timeout not found.
+2018-12-26 07:13:27,531 ec_base DEBUG ExecutionContext's configurations:
+2018-12-26 07:13:27,531 ec_base DEBUG Exec rate   : 1000.000000 [Hz]
+2018-12-26 07:13:27,531 ec_base DEBUG Activation  : Sync = YES, Timeout = 0.500000
+2018-12-26 07:13:27,531 ec_base DEBUG Deactivation: Sync = YES, Timeout = 0.500000
+2018-12-26 07:13:27,531 ec_base DEBUG Reset       : Sync = YES, Timeout = 0.500000
+2018-12-26 07:13:27,531 periodic_ecprofile DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-26 07:13:27,531 ec_worker DEBUG bindContext returns id = 0
+2018-12-26 07:13:27,531 ec_worker DEBUG bindComponent() succeeded.
+2018-12-26 07:13:27,531 rtobject INFO 1 execution context was created.
+2018-12-26 07:13:27,531 rtobject DEBUG Calling onInitialize().
+2018-12-26 07:13:27,532 inImage DEBUG single buffer mode.
+2018-12-26 07:13:27,532 inImage DEBUG available providers: corba_cdr
+2018-12-26 07:13:27,532 inImage DEBUG dataflow_type push is supported
+2018-12-26 07:13:27,532 inImage DEBUG available consumers: corba_cdr
+2018-12-26 07:13:27,533 inString DEBUG single buffer mode.
+2018-12-26 07:13:27,533 inString DEBUG available providers: corba_cdr
+2018-12-26 07:13:27,533 inString DEBUG dataflow_type push is supported
+2018-12-26 07:13:27,533 inString DEBUG available consumers: corba_cdr
+2018-12-26 07:13:27,534 outImage DEBUG dataflow_type pull is supported
+2018-12-26 07:13:27,535 outObjectParam DEBUG dataflow_type pull is supported
+2018-12-26 07:13:27,536 outFlag DEBUG dataflow_type pull is supported
+2018-12-26 07:13:27,536 rtobject DEBUG onInitialize() succeeded.
+2018-12-26 07:13:27,536 rtobject DEBUG Active configuration set: default exists.
+2018-12-26 07:13:27,536 rtobject INFO Initial active configuration set is default.
+2018-12-26 07:13:27,536 rtobject DEBUG on_initialize() was properly done.
+2018-12-26 07:13:27,536 rtobject DEBUG EC[0] starting.
+2018-12-26 07:13:27,537 ec_worker DEBUG 1 components started.

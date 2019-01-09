@@ -1,0 +1,273 @@
+2018-12-22 09:00:48,845 manager INFO 1.1.0
+2018-12-22 09:00:48,845 manager INFO Copyright (C) 2003-2010
+2018-12-22 09:00:48,845 manager INFO   Noriaki Ando
+2018-12-22 09:00:48,846 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-22 09:00:48,846 manager INFO Manager starting.
+2018-12-22 09:00:48,846 manager INFO Starting local logging.
+2018-12-22 09:00:48,846 manager DEBUG corba.args: -ORBgiopMaxMsgSize 4194304
+2018-12-22 09:00:48,846 manager DEBUG corba.endpoint: 
+2018-12-22 09:00:48,846 manager DEBUG manager.is_master: NO
+2018-12-22 09:00:48,846 manager DEBUG corba.id: omniORB
+2018-12-22 09:00:48,849 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-22 09:00:48,850 ManagerServant DEBUG corbaloc: corbaloc:iiop:localhost:2810/manager
+2018-12-22 09:00:48,850 ManagerServant DEBUG Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerServant.py", line 944, in findManager
+    mgr = mobj._narrow(RTM.Manager)
+  File "/usr/lib/python2.7/dist-packages/omniORB/CORBA.py", line 798, in _narrow
+    return _omnipy.narrow(self, repoId, 1)
+TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+
+2018-12-22 09:00:48,851 ManagerServant INFO Master manager not found
+2018-12-22 09:00:48,851 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-22 09:00:48,851 LocalServiceAdmin DEBUG Available services: 
+2018-12-22 09:00:48,851 manager DEBUG LocalServiceAdmin's properties:
+2018-12-22 09:00:48,851 manager DEBUG - enabled_services: ALL
+
+2018-12-22 09:00:48,852 SdoServiceAdmin DEBUG sdo.service.provider.enabled_services: 
+2018-12-22 09:00:48,852 SdoServiceAdmin DEBUG sdo.service.provider.available_services: 
+2018-12-22 09:00:48,852 SdoServiceAdmin DEBUG sdo.service.consumer.enabled_services: 
+2018-12-22 09:00:48,852 SdoServiceAdmin DEBUG sdo.service.consumer.available_services: 
+2018-12-22 09:00:48,853 inImage DEBUG Port name: inImage
+2018-12-22 09:00:48,853 inImage DEBUG setting port.port_type: DataInPort
+2018-12-22 09:00:48,853 inImage DEBUG setting port.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 09:00:48,853 inString DEBUG Port name: inString
+2018-12-22 09:00:48,853 inString DEBUG setting port.port_type: DataInPort
+2018-12-22 09:00:48,853 inString DEBUG setting port.data_type: IDL:RTC/TimedString:1.0
+2018-12-22 09:00:48,853 outImage DEBUG Port name: outImage
+2018-12-22 09:00:48,853 outImage DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:00:48,853 outImage DEBUG setting dataport.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 09:00:48,853 outImage DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:00:48,853 outObjectParam DEBUG Port name: outObjectParam
+2018-12-22 09:00:48,853 outObjectParam DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:00:48,853 outObjectParam DEBUG setting dataport.data_type: IDL:ObjectRecognition/TimedObjectParamSeq:1.0
+2018-12-22 09:00:48,853 outObjectParam DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:00:48,853 outFlag DEBUG Port name: outFlag
+2018-12-22 09:00:48,853 outFlag DEBUG setting port.port_type: DataOutPort
+2018-12-22 09:00:48,853 outFlag DEBUG setting dataport.data_type: IDL:RTC/TimedLong:1.0
+2018-12-22 09:00:48,854 outFlag DEBUG available subscription_type: flush, new, periodic
+2018-12-22 09:00:48,854 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-22 09:00:48,854 manager DEBUG - exec_cxt
+  - periodic
+    - rate: 1000.0
+
+2018-12-22 09:00:48,855 rtobject DEBUG getContextOptions()
+2018-12-22 09:00:48,855 rtobject DEBUG Global EC options are specified.
+2018-12-22 09:00:48,855 rtobject DEBUG - type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:00:48,855 rtobject DEBUG Copying inherited EC options.
+2018-12-22 09:00:48,855 rtobject DEBUG No component specific EC specified.
+2018-12-22 09:00:48,855 periodic_ecprofile DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 09:00:48,855 ec_base INFO setRate(1000000.000000) done
+2018-12-22 09:00:48,855 ec_base DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 09:00:48,855 rtobject DEBUG EC (PeriodicExecutionContext) created.
+2018-12-22 09:00:48,855 ec_base DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:00:48,856 ec_base INFO setRate(1000.000000) done
+2018-12-22 09:00:48,856 ec_base DEBUG Transition Mode: sync_transition = YES
+2018-12-22 09:00:48,856 ec_base DEBUG Configuration sync_activation not found.
+2018-12-22 09:00:48,856 ec_base DEBUG Configuration sync_deactivation not found.
+2018-12-22 09:00:48,856 ec_base DEBUG Configuration sync_reset not found.
+2018-12-22 09:00:48,856 ec_base DEBUG Timeout (transition_timeout): 0.500000 [s]
+2018-12-22 09:00:48,856 ec_base DEBUG Configuration activation_timeout not found.
+2018-12-22 09:00:48,856 ec_base DEBUG Configuration deactivation_timeout not found.
+2018-12-22 09:00:48,856 ec_base DEBUG Configuration reset_timeout not found.
+2018-12-22 09:00:48,856 ec_base DEBUG ExecutionContext's configurations:
+2018-12-22 09:00:48,856 ec_base DEBUG Exec rate   : 1000.000000 [Hz]
+2018-12-22 09:00:48,856 ec_base DEBUG Activation  : Sync = YES, Timeout = 0.500000
+2018-12-22 09:00:48,856 ec_base DEBUG Deactivation: Sync = YES, Timeout = 0.500000
+2018-12-22 09:00:48,856 ec_base DEBUG Reset       : Sync = YES, Timeout = 0.500000
+2018-12-22 09:00:48,856 periodic_ecprofile DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 09:00:48,856 ec_worker DEBUG bindContext returns id = 0
+2018-12-22 09:00:48,856 ec_worker DEBUG bindComponent() succeeded.
+2018-12-22 09:00:48,856 rtobject INFO 1 execution context was created.
+2018-12-22 09:00:48,856 rtobject DEBUG Calling onInitialize().
+2018-12-22 09:00:48,857 inImage DEBUG single buffer mode.
+2018-12-22 09:00:48,857 inImage DEBUG available providers: corba_cdr
+2018-12-22 09:00:48,857 inImage DEBUG dataflow_type push is supported
+2018-12-22 09:00:48,857 inImage DEBUG available consumers: corba_cdr
+2018-12-22 09:00:48,858 inString DEBUG single buffer mode.
+2018-12-22 09:00:48,858 inString DEBUG available providers: corba_cdr
+2018-12-22 09:00:48,858 inString DEBUG dataflow_type push is supported
+2018-12-22 09:00:48,858 inString DEBUG available consumers: corba_cdr
+2018-12-22 09:00:48,858 outImage DEBUG dataflow_type pull is supported
+2018-12-22 09:00:48,859 outObjectParam DEBUG dataflow_type pull is supported
+2018-12-22 09:00:48,860 outFlag DEBUG dataflow_type pull is supported
+2018-12-22 09:00:48,860 rtobject DEBUG onInitialize() succeeded.
+2018-12-22 09:00:48,860 rtobject DEBUG Active configuration set: default exists.
+2018-12-22 09:00:48,860 rtobject INFO Initial active configuration set is default.
+2018-12-22 09:00:48,860 rtobject DEBUG on_initialize() was properly done.
+2018-12-22 09:00:48,860 rtobject DEBUG EC[0] starting.
+2018-12-22 09:00:48,860 ec_worker DEBUG 1 components started.
+2018-12-22 09:00:52,461 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:53,182 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:53,184 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-22 09:00:53,184 SdoServiceAdmin ERROR type  already exists.
+2018-12-22 09:00:53,184 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-22 09:00:53,184 SdoServiceAdmin ERROR type 5c891b22-7c06-412a-9396-8dbbdb434e75 already exists.
+2018-12-22 09:00:53,812 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:54,809 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:55,813 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:55,973 inImage DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 09:00:55,973 inImage DEBUG interface_type: corba_cdr
+2018-12-22 09:00:55,974 inImage DEBUG provider created
+2018-12-22 09:00:55,974 inImage DEBUG publishInterfaces() successfully finished.
+2018-12-22 09:00:55,975 inImage DEBUG dataflow_type = push .... do nothing
+2018-12-22 09:00:55,975 inImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:00:56,812 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:57,813 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:58,702 inString DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 09:00:58,702 inString DEBUG interface_type: corba_cdr
+2018-12-22 09:00:58,702 inString DEBUG provider created
+2018-12-22 09:00:58,702 inString DEBUG publishInterfaces() successfully finished.
+2018-12-22 09:00:58,702 inString DEBUG dataflow_type = push .... do nothing
+2018-12-22 09:00:58,702 inString DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:00:58,759 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:00:59,770 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:00,812 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:01,780 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:02,808 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:03,006 outFlag DEBUG interface_type: corba_cdr
+2018-12-22 09:01:03,007 outFlag DEBUG consumer created
+2018-12-22 09:01:03,008 outFlag DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:01:03,783 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:04,769 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:05,815 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:06,816 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:07,808 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:07,958 outImage DEBUG interface_type: corba_cdr
+2018-12-22 09:01:07,959 outImage DEBUG consumer created
+2018-12-22 09:01:07,960 outImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 09:01:08,814 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:09,497 ec_worker DEBUG Component found in the EC.
+2018-12-22 09:01:09,497 ec_worker DEBUG Component is in INACTIVE state. Going to ACTIVE state.
+2018-12-22 09:01:09,497 ec_worker DEBUG activateComponent() done.
+2018-12-22 09:01:09,498 ec_base DEBUG Synchronous activation mode. Waiting for the RTC to be ACTIVE state. 
+2018-12-22 09:01:09,498 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)
+2018-12-22 09:01:09,499 ec_base DEBUG Waiting to be ACTIVE state. 0.001247 [s] slept (0/500)
+2018-12-22 09:01:10,800 ec_base DEBUG Waiting to be ACTIVE state. 1.301917 [s] slept (1/500)
+2018-12-22 09:01:10,800 ec_base WARNING The component is not responding.
+2018-12-22 09:01:10,801 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-22 09:01:10,823 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:10,870 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:11,204 inImage DEBUG activate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage 06f1f7b5-5a36-4e9e-b7a7-e0370c214070
+2018-12-22 09:01:11,204 inString DEBUG activate connector: ReadString0.outstring_Deep_LearningRTC0.inString 8ee9dd36-d5d8-4c23-9862-9c85f2aa82fc
+2018-12-22 09:01:11,204 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 09:01:11,204 inImage DEBUG data read succeeded
+2018-12-22 09:01:11,205 inString DEBUG data read succeeded
+2018-12-22 09:01:11,366 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 400, in onExecute
+    self._d_outObjectParam.data = objParam
+NameError: global name 'objParam' is not defined
+
+2018-12-22 09:01:11,367 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage 06f1f7b5-5a36-4e9e-b7a7-e0370c214070
+2018-12-22 09:01:11,367 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString 8ee9dd36-d5d8-4c23-9862-9c85f2aa82fc
+2018-12-22 09:01:11,866 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:12,861 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:13,864 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:15,283 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 09:01:15,295 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:15,899 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:16,900 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:17,902 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:18,907 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:19,881 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:20,908 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:21,906 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:22,913 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:23,876 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:24,927 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:25,929 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:26,918 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:27,920 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:28,931 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:29,938 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:30,920 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:31,929 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:32,923 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:33,927 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:34,927 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:35,929 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:36,898 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:37,922 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:38,935 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:39,929 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:40,933 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:41,928 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:42,925 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:43,937 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:44,896 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:45,935 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:46,005 ec_base DEBUG Synchronous reset mode. Waiting for the RTC to be INACTIVE state. 
+2018-12-22 09:01:46,006 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)
+2018-12-22 09:01:46,007 ec_base DEBUG Current state is INACTIVE_STATE
+2018-12-22 09:01:46,007 ec_base DEBUG onReset() done.
+2018-12-22 09:01:46,925 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:47,920 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:48,367 ec_worker DEBUG Component found in the EC.
+2018-12-22 09:01:48,368 ec_worker DEBUG Component is in INACTIVE state. Going to ACTIVE state.
+2018-12-22 09:01:48,369 ec_worker DEBUG activateComponent() done.
+2018-12-22 09:01:48,369 ec_base DEBUG Synchronous activation mode. Waiting for the RTC to be ACTIVE state. 
+2018-12-22 09:01:48,370 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)
+2018-12-22 09:01:48,462 ec_base DEBUG Waiting to be ACTIVE state. 0.091375 [s] slept (0/500)
+2018-12-22 09:01:49,089 ec_base DEBUG Waiting to be ACTIVE state. 0.718938 [s] slept (1/500)
+2018-12-22 09:01:49,090 ec_base WARNING The component is not responding.
+2018-12-22 09:01:49,090 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-22 09:01:49,274 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 09:01:49,378 inImage DEBUG activate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage 06f1f7b5-5a36-4e9e-b7a7-e0370c214070
+2018-12-22 09:01:49,378 inString DEBUG activate connector: ReadString0.outstring_Deep_LearningRTC0.inString 8ee9dd36-d5d8-4c23-9862-9c85f2aa82fc
+2018-12-22 09:01:49,378 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 09:01:49,379 inImage DEBUG data read succeeded
+2018-12-22 09:01:49,379 inString DEBUG data read succeeded
+2018-12-22 09:01:49,492 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 400, in onExecute
+    self._d_outObjectParam.data = objParam
+NameError: global name 'objParam' is not defined
+
+2018-12-22 09:01:49,492 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage 06f1f7b5-5a36-4e9e-b7a7-e0370c214070
+2018-12-22 09:01:49,493 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString 8ee9dd36-d5d8-4c23-9862-9c85f2aa82fc
+2018-12-22 09:01:49,884 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:50,888 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:51,882 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:52,886 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:53,886 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:54,882 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:55,883 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:56,888 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:57,563 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 09:01:57,925 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:58,926 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:01:59,937 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:02:00,533 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 09:02:00,533 ec_base DEBUG Thread terminated.
+2018-12-22 09:02:00,534 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage 06f1f7b5-5a36-4e9e-b7a7-e0370c214070
+2018-12-22 09:02:00,534 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString 8ee9dd36-d5d8-4c23-9862-9c85f2aa82fc
+2018-12-22 09:02:00,536 outFlag DEBUG disconnecting 1 connections.
+2018-12-22 09:02:00,536 OutPortConnector DEBUG delete publisher
+2018-12-22 09:02:00,537 OutPortConnector DEBUG delete consumer
+2018-12-22 09:02:00,537 OutPortConnector DEBUG delete buffer
+2018-12-22 09:02:00,539 outObjectParam DEBUG disconnecting 0 connections.
+2018-12-22 09:02:00,541 outImage DEBUG disconnecting 1 connections.
+2018-12-22 09:02:00,542 OutPortConnector DEBUG delete publisher
+2018-12-22 09:02:00,543 OutPortConnector DEBUG delete consumer
+2018-12-22 09:02:00,543 OutPortConnector DEBUG delete buffer
+2018-12-22 09:02:00,545 inString DEBUG disconnecting 1 connections.
+2018-12-22 09:02:00,548 inImage DEBUG disconnecting 1 connections.
+2018-12-22 09:02:00,550 ec_worker WARNING ExecutionContext is already stopped.
+2018-12-22 09:02:00,550 ec_base ERROR Invoking on_shutdown() for each RTC failed.
+2018-12-22 09:02:00,550 rtobject DEBUG Cleanup on Manager
+2018-12-22 09:02:00,553 manager DEBUG No pending works of ORB. Shutting down POA and ORB.
+2018-12-22 09:02:00,553 manager DEBUG POA Manager was deactivated.
+2018-12-22 09:02:00,554 manager DEBUG POA was destroyed.
+2018-12-22 09:02:00,555 manager DEBUG ORB was shutdown.

@@ -1,0 +1,23 @@
+[0m[34mDec 25 21:29:36.474 INFO: manager: [0m1.1.2
+[0m[34mDec 25 21:29:36.474 INFO: manager: [0mCopyright (C) 2003-2014
+[0m[34mDec 25 21:29:36.474 INFO: manager: [0m  Noriaki Ando
+[0m[34mDec 25 21:29:36.474 INFO: manager: [0m  Intelligent Systems Research Institute, AIST
+[0m[34mDec 25 21:29:36.474 INFO: manager: [0mManager starting.
+[0m[34mDec 25 21:29:36.474 INFO: manager: [0mStarting local logging.
+[0m[33mDec 25 21:29:36.482 WARNING: NamingOnCorba: [0mNo endpoint for the CORBA naming service (localhost) was found.
+[0m[34mDec 25 21:29:36.482 INFO: NamingManager: [0mNameServer connection succeeded: corba/localhost
+[0m[34mDec 25 21:29:36.482 INFO: ManagerServant: [0mMaster manager not found
+[0m[33mDec 25 21:38:00.296 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: 
+[0m[33mDec 25 21:38:00.298 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+[0m[33mDec 25 21:41:43.542 WARNING: outGetHuman: [0mDead connection: 670124bf-5203-4fa5-9a0d-7e9eb3c8385e
+[0m[33mDec 25 21:41:43.542 WARNING: outGetHuman: [0mException caught: minor code.
+[0m[33mDec 25 21:41:43.542 WARNING: outGetRotot: [0mDead connection: c762268b-3bb5-4e7d-89f2-ce496e32ad85
+[0m[33mDec 25 21:41:43.543 WARNING: outGetRotot: [0mException caught: minor code.
+[0m[33mDec 25 21:52:48.613 WARNING: outGetHuman: [0mDead connection: 454b3289-fd46-4576-949b-db14a6a46c0f
+[0m[33mDec 25 21:52:48.613 WARNING: outGetHuman: [0mException caught: minor code.
+[0m[33mDec 25 21:52:48.614 WARNING: outGetRotot: [0mDead connection: c7b490c8-b464-4ecf-b125-9d82886ee0b6
+[0m[33mDec 25 21:52:48.614 WARNING: outGetRotot: [0mException caught: minor code.
+[0m[33mDec 25 21:57:55.668 WARNING: outGetHuman: [0mDead connection: 2fa793e6-bb31-4470-ad5c-a704254b5d6c
+[0m[33mDec 25 21:57:55.668 WARNING: outGetHuman: [0mException caught: minor code.
+[0m[33mDec 25 21:57:55.669 WARNING: outGetRotot: [0mDead connection: 7aa48d44-797b-4a67-b004-b6b9806c5d1a
+[0m[33mDec 25 21:57:55.669 WARNING: outGetRotot: [0mException caught: minor code.

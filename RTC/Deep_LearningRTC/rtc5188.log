@@ -1,0 +1,2038 @@
+2018-12-22 08:53:18,308 manager INFO 1.1.0
+2018-12-22 08:53:18,308 manager INFO Copyright (C) 2003-2010
+2018-12-22 08:53:18,308 manager INFO   Noriaki Ando
+2018-12-22 08:53:18,308 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-22 08:53:18,308 manager INFO Manager starting.
+2018-12-22 08:53:18,308 manager INFO Starting local logging.
+2018-12-22 08:53:18,308 manager DEBUG corba.args: -ORBgiopMaxMsgSize 4194304
+2018-12-22 08:53:18,308 manager DEBUG corba.endpoint: 
+2018-12-22 08:53:18,309 manager DEBUG manager.is_master: NO
+2018-12-22 08:53:18,309 manager DEBUG corba.id: omniORB
+2018-12-22 08:53:18,311 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-22 08:53:18,313 ManagerServant DEBUG corbaloc: corbaloc:iiop:localhost:2810/manager
+2018-12-22 08:53:18,313 ManagerServant DEBUG Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerServant.py", line 944, in findManager
+    mgr = mobj._narrow(RTM.Manager)
+  File "/usr/lib/python2.7/dist-packages/omniORB/CORBA.py", line 798, in _narrow
+    return _omnipy.narrow(self, repoId, 1)
+TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+
+2018-12-22 08:53:18,313 ManagerServant INFO Master manager not found
+2018-12-22 08:53:18,314 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-22 08:53:18,314 LocalServiceAdmin DEBUG Available services: 
+2018-12-22 08:53:18,314 manager DEBUG LocalServiceAdmin's properties:
+2018-12-22 08:53:18,314 manager DEBUG - enabled_services: ALL
+
+2018-12-22 08:53:18,315 SdoServiceAdmin DEBUG sdo.service.provider.enabled_services: 
+2018-12-22 08:53:18,315 SdoServiceAdmin DEBUG sdo.service.provider.available_services: 
+2018-12-22 08:53:18,315 SdoServiceAdmin DEBUG sdo.service.consumer.enabled_services: 
+2018-12-22 08:53:18,315 SdoServiceAdmin DEBUG sdo.service.consumer.available_services: 
+2018-12-22 08:53:18,315 inImage DEBUG Port name: inImage
+2018-12-22 08:53:18,315 inImage DEBUG setting port.port_type: DataInPort
+2018-12-22 08:53:18,316 inImage DEBUG setting port.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 08:53:18,316 inString DEBUG Port name: inString
+2018-12-22 08:53:18,316 inString DEBUG setting port.port_type: DataInPort
+2018-12-22 08:53:18,316 inString DEBUG setting port.data_type: IDL:RTC/TimedString:1.0
+2018-12-22 08:53:18,316 outImage DEBUG Port name: outImage
+2018-12-22 08:53:18,316 outImage DEBUG setting port.port_type: DataOutPort
+2018-12-22 08:53:18,316 outImage DEBUG setting dataport.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 08:53:18,316 outImage DEBUG available subscription_type: flush, new, periodic
+2018-12-22 08:53:18,316 outObjectParam DEBUG Port name: outObjectParam
+2018-12-22 08:53:18,316 outObjectParam DEBUG setting port.port_type: DataOutPort
+2018-12-22 08:53:18,316 outObjectParam DEBUG setting dataport.data_type: IDL:ObjectRecognition/TimedObjectParamSeq:1.0
+2018-12-22 08:53:18,316 outObjectParam DEBUG available subscription_type: flush, new, periodic
+2018-12-22 08:53:18,316 outFlag DEBUG Port name: outFlag
+2018-12-22 08:53:18,316 outFlag DEBUG setting port.port_type: DataOutPort
+2018-12-22 08:53:18,316 outFlag DEBUG setting dataport.data_type: IDL:RTC/TimedLong:1.0
+2018-12-22 08:53:18,316 outFlag DEBUG available subscription_type: flush, new, periodic
+2018-12-22 08:53:18,317 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-22 08:53:18,317 manager DEBUG - exec_cxt
+  - periodic
+    - rate: 1000.0
+
+2018-12-22 08:53:18,318 rtobject DEBUG getContextOptions()
+2018-12-22 08:53:18,318 rtobject DEBUG Global EC options are specified.
+2018-12-22 08:53:18,318 rtobject DEBUG - type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 08:53:18,318 rtobject DEBUG Copying inherited EC options.
+2018-12-22 08:53:18,318 rtobject DEBUG No component specific EC specified.
+2018-12-22 08:53:18,318 periodic_ecprofile DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 08:53:18,318 ec_base INFO setRate(1000000.000000) done
+2018-12-22 08:53:18,318 ec_base DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 08:53:18,318 rtobject DEBUG EC (PeriodicExecutionContext) created.
+2018-12-22 08:53:18,318 ec_base DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 08:53:18,318 ec_base INFO setRate(1000.000000) done
+2018-12-22 08:53:18,318 ec_base DEBUG Transition Mode: sync_transition = YES
+2018-12-22 08:53:18,319 ec_base DEBUG Configuration sync_activation not found.
+2018-12-22 08:53:18,319 ec_base DEBUG Configuration sync_deactivation not found.
+2018-12-22 08:53:18,319 ec_base DEBUG Configuration sync_reset not found.
+2018-12-22 08:53:18,319 ec_base DEBUG Timeout (transition_timeout): 0.500000 [s]
+2018-12-22 08:53:18,319 ec_base DEBUG Configuration activation_timeout not found.
+2018-12-22 08:53:18,319 ec_base DEBUG Configuration deactivation_timeout not found.
+2018-12-22 08:53:18,319 ec_base DEBUG Configuration reset_timeout not found.
+2018-12-22 08:53:18,319 ec_base DEBUG ExecutionContext's configurations:
+2018-12-22 08:53:18,319 ec_base DEBUG Exec rate   : 1000.000000 [Hz]
+2018-12-22 08:53:18,319 ec_base DEBUG Activation  : Sync = YES, Timeout = 0.500000
+2018-12-22 08:53:18,319 ec_base DEBUG Deactivation: Sync = YES, Timeout = 0.500000
+2018-12-22 08:53:18,319 ec_base DEBUG Reset       : Sync = YES, Timeout = 0.500000
+2018-12-22 08:53:18,319 periodic_ecprofile DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 08:53:18,319 ec_worker DEBUG bindContext returns id = 0
+2018-12-22 08:53:18,319 ec_worker DEBUG bindComponent() succeeded.
+2018-12-22 08:53:18,319 rtobject INFO 1 execution context was created.
+2018-12-22 08:53:18,319 rtobject DEBUG Calling onInitialize().
+2018-12-22 08:53:18,320 inImage DEBUG single buffer mode.
+2018-12-22 08:53:18,320 inImage DEBUG available providers: corba_cdr
+2018-12-22 08:53:18,320 inImage DEBUG dataflow_type push is supported
+2018-12-22 08:53:18,320 inImage DEBUG available consumers: corba_cdr
+2018-12-22 08:53:18,320 inString DEBUG single buffer mode.
+2018-12-22 08:53:18,321 inString DEBUG available providers: corba_cdr
+2018-12-22 08:53:18,321 inString DEBUG dataflow_type push is supported
+2018-12-22 08:53:18,321 inString DEBUG available consumers: corba_cdr
+2018-12-22 08:53:18,321 outImage DEBUG dataflow_type pull is supported
+2018-12-22 08:53:18,322 outObjectParam DEBUG dataflow_type pull is supported
+2018-12-22 08:53:18,323 outFlag DEBUG dataflow_type pull is supported
+2018-12-22 08:53:18,323 rtobject DEBUG onInitialize() succeeded.
+2018-12-22 08:53:18,323 rtobject DEBUG Active configuration set: default exists.
+2018-12-22 08:53:18,323 rtobject INFO Initial active configuration set is default.
+2018-12-22 08:53:18,323 rtobject DEBUG on_initialize() was properly done.
+2018-12-22 08:53:18,323 rtobject DEBUG EC[0] starting.
+2018-12-22 08:53:18,323 ec_worker DEBUG 1 components started.
+2018-12-22 08:53:21,185 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:21,734 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:21,738 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-22 08:53:21,739 SdoServiceAdmin ERROR type  already exists.
+2018-12-22 08:53:21,741 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-22 08:53:21,742 SdoServiceAdmin ERROR type 991e0bfd-796b-4e3a-9ac1-4e4b10c18e8c already exists.
+2018-12-22 08:53:22,606 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:23,570 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:24,249 inImage DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 08:53:24,249 inImage DEBUG interface_type: corba_cdr
+2018-12-22 08:53:24,249 inImage DEBUG provider created
+2018-12-22 08:53:24,249 inImage DEBUG publishInterfaces() successfully finished.
+2018-12-22 08:53:24,249 inImage DEBUG dataflow_type = push .... do nothing
+2018-12-22 08:53:24,250 inImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:53:24,602 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:25,604 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:26,606 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:27,603 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:28,217 inString DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 08:53:28,217 inString DEBUG interface_type: corba_cdr
+2018-12-22 08:53:28,217 inString DEBUG provider created
+2018-12-22 08:53:28,217 inString DEBUG publishInterfaces() successfully finished.
+2018-12-22 08:53:28,217 inString DEBUG dataflow_type = push .... do nothing
+2018-12-22 08:53:28,217 inString DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:53:28,608 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:29,612 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:30,604 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:31,608 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:31,775 outImage DEBUG interface_type: corba_cdr
+2018-12-22 08:53:31,775 outImage DEBUG consumer created
+2018-12-22 08:53:31,776 outImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:53:32,567 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:33,270 ec_worker DEBUG Component found in the EC.
+2018-12-22 08:53:33,270 ec_worker DEBUG Component is in INACTIVE state. Going to ACTIVE state.
+2018-12-22 08:53:33,270 ec_worker DEBUG activateComponent() done.
+2018-12-22 08:53:33,270 ec_base DEBUG Synchronous activation mode. Waiting for the RTC to be ACTIVE state. 
+2018-12-22 08:53:33,271 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)
+2018-12-22 08:53:34,001 ec_base DEBUG Waiting to be ACTIVE state. 0.729394 [s] slept (0/500)
+2018-12-22 08:53:34,531 ec_base WARNING The component is not responding.
+2018-12-22 08:53:34,531 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-22 08:53:34,552 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:34,592 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:53:34,935 inImage DEBUG activate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage db6f596b-3d3b-4ac3-be47-26b167e085ab
+2018-12-22 08:53:34,935 inString DEBUG activate connector: ReadString0.outstring_Deep_LearningRTC0.inString c1313cc7-59ad-4728-a872-6d6eb630180f
+2018-12-22 08:53:34,935 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:34,936 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:34,938 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:34,938 inImage DEBUG data read succeeded
+2018-12-22 08:53:34,938 inString DEBUG data read succeeded
+2018-12-22 08:53:35,092 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,092 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,092 inString WARNING buffer empty
+2018-12-22 08:53:35,206 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,206 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,207 inString WARNING buffer empty
+2018-12-22 08:53:35,326 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,327 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,327 inString WARNING buffer empty
+2018-12-22 08:53:35,446 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,446 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,447 inString WARNING buffer empty
+2018-12-22 08:53:35,575 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,576 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,576 inString WARNING buffer empty
+2018-12-22 08:53:35,634 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:35,722 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,722 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,722 inString WARNING buffer empty
+2018-12-22 08:53:35,838 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,838 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,838 inString WARNING buffer empty
+2018-12-22 08:53:35,954 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:35,954 inImage DEBUG data read succeeded
+2018-12-22 08:53:35,954 inString WARNING buffer empty
+2018-12-22 08:53:36,072 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,072 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,073 inString WARNING buffer empty
+2018-12-22 08:53:36,190 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,190 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,190 inString WARNING buffer empty
+2018-12-22 08:53:36,307 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,308 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,308 inString WARNING buffer empty
+2018-12-22 08:53:36,424 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,424 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,425 inString WARNING buffer empty
+2018-12-22 08:53:36,541 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,542 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,542 inString WARNING buffer empty
+2018-12-22 08:53:36,657 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,657 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,658 inString WARNING buffer empty
+2018-12-22 08:53:36,664 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:36,775 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,775 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,776 inString WARNING buffer empty
+2018-12-22 08:53:36,892 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:36,892 inImage DEBUG data read succeeded
+2018-12-22 08:53:36,893 inString WARNING buffer empty
+2018-12-22 08:53:37,009 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,009 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,010 inString WARNING buffer empty
+2018-12-22 08:53:37,126 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,126 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,126 inString WARNING buffer empty
+2018-12-22 08:53:37,244 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,244 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,245 inString WARNING buffer empty
+2018-12-22 08:53:37,360 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,361 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,362 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,362 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,363 inString WARNING buffer empty
+2018-12-22 08:53:37,479 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,480 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,481 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,482 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,483 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,484 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,486 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,486 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,486 inString WARNING buffer empty
+2018-12-22 08:53:37,598 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,599 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,600 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,601 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,602 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,604 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,605 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,606 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,607 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,608 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,609 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,611 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,611 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,611 inString WARNING buffer empty
+2018-12-22 08:53:37,670 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:37,726 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,727 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,728 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,730 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,731 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,732 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,733 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,733 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,734 inString WARNING buffer empty
+2018-12-22 08:53:37,848 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,849 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,850 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,852 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,853 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,854 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,854 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,854 inString WARNING buffer empty
+2018-12-22 08:53:37,970 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,971 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,972 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,974 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,975 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,976 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:37,977 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:37,977 inImage DEBUG data read succeeded
+2018-12-22 08:53:37,978 inString WARNING buffer empty
+2018-12-22 08:53:38,094 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,095 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,096 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,097 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,099 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,100 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,101 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,101 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,102 inString WARNING buffer empty
+2018-12-22 08:53:38,216 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,217 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,219 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,220 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,221 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,222 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,223 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,224 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,225 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,226 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,226 inString WARNING buffer empty
+2018-12-22 08:53:38,340 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,342 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,343 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,344 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,345 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,346 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,346 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,347 inString WARNING buffer empty
+2018-12-22 08:53:38,460 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,461 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,462 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,463 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,464 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,465 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,466 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,468 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,469 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,470 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,470 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,471 inString WARNING buffer empty
+2018-12-22 08:53:38,586 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,587 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,588 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,589 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,591 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,592 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,593 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,594 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,594 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,594 inString WARNING buffer empty
+2018-12-22 08:53:38,653 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:38,709 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,710 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,711 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,713 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,714 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,715 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,716 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,717 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,717 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,718 inString WARNING buffer empty
+2018-12-22 08:53:38,837 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,838 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,838 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,839 inString WARNING buffer empty
+2018-12-22 08:53:38,952 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,953 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,954 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,956 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,957 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,958 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,959 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,960 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:38,962 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:38,962 inImage DEBUG data read succeeded
+2018-12-22 08:53:38,962 inString WARNING buffer empty
+2018-12-22 08:53:39,081 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,082 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,083 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,084 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,086 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,086 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,086 inString WARNING buffer empty
+2018-12-22 08:53:39,202 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,203 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,204 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,205 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,207 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,208 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,209 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,210 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,210 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,211 inString WARNING buffer empty
+2018-12-22 08:53:39,325 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,326 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,328 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,329 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,330 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,330 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,330 inString WARNING buffer empty
+2018-12-22 08:53:39,445 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,446 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,447 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,449 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,450 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,451 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,452 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,453 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,454 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,455 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,455 inString WARNING buffer empty
+2018-12-22 08:53:39,570 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,571 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,572 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,573 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,574 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,575 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,576 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,578 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,579 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,579 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,579 inString WARNING buffer empty
+2018-12-22 08:53:39,638 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:39,696 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,697 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,698 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,699 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,700 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,701 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,702 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,702 inString WARNING buffer empty
+2018-12-22 08:53:39,817 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,818 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,819 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,820 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,821 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,823 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,823 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,823 inString WARNING buffer empty
+2018-12-22 08:53:39,938 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,939 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,940 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,942 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,943 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,944 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:39,945 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:39,946 inImage DEBUG data read succeeded
+2018-12-22 08:53:39,946 inString WARNING buffer empty
+2018-12-22 08:53:40,061 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,062 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,064 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,065 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,066 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,067 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,068 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,069 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,070 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,070 inString WARNING buffer empty
+2018-12-22 08:53:40,189 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,190 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,190 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,191 inString WARNING buffer empty
+2018-12-22 08:53:40,308 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,309 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,310 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,311 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,312 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,313 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,314 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,314 inString WARNING buffer empty
+2018-12-22 08:53:40,428 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,429 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,430 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,432 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,433 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,434 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,435 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,436 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,437 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,438 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,438 inString WARNING buffer empty
+2018-12-22 08:53:40,551 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,552 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,553 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,554 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,555 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,556 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,557 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,559 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,560 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,561 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,562 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,562 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,563 inString WARNING buffer empty
+2018-12-22 08:53:40,673 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:40,683 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,683 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,684 inString WARNING buffer empty
+2018-12-22 08:53:40,798 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,799 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,800 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,801 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,802 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,803 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,804 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,805 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,806 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,806 inString WARNING buffer empty
+2018-12-22 08:53:40,920 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,922 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,923 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,924 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,925 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,926 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,927 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,928 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:40,930 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:40,930 inImage DEBUG data read succeeded
+2018-12-22 08:53:40,930 inString WARNING buffer empty
+2018-12-22 08:53:41,045 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,046 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,047 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,048 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,049 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,051 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,052 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,053 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,054 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,054 inString WARNING buffer empty
+2018-12-22 08:53:41,170 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,171 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,173 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,174 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,174 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,174 inString WARNING buffer empty
+2018-12-22 08:53:41,291 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,292 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,293 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,294 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,295 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,296 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:41,297 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,298 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,298 inString WARNING buffer empty
+2018-12-22 08:53:41,412 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,412 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,413 inString WARNING buffer empty
+2018-12-22 08:53:41,529 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,530 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,530 inString WARNING buffer empty
+2018-12-22 08:53:41,648 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,648 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,649 inString WARNING buffer empty
+2018-12-22 08:53:41,705 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:41,764 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,764 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,764 inString WARNING buffer empty
+2018-12-22 08:53:41,880 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:41,880 inImage DEBUG data read succeeded
+2018-12-22 08:53:41,881 inString WARNING buffer empty
+2018-12-22 08:53:42,000 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,000 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,001 inString WARNING buffer empty
+2018-12-22 08:53:42,115 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,115 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,115 inString WARNING buffer empty
+2018-12-22 08:53:42,232 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,232 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,232 inString WARNING buffer empty
+2018-12-22 08:53:42,349 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,350 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,350 inString WARNING buffer empty
+2018-12-22 08:53:42,466 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,466 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,466 inString WARNING buffer empty
+2018-12-22 08:53:42,581 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,581 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,582 inString WARNING buffer empty
+2018-12-22 08:53:42,690 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:42,699 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,700 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,700 inString WARNING buffer empty
+2018-12-22 08:53:42,816 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,816 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,816 inString WARNING buffer empty
+2018-12-22 08:53:42,932 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:42,932 inImage DEBUG data read succeeded
+2018-12-22 08:53:42,933 inString WARNING buffer empty
+2018-12-22 08:53:43,045 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,047 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,048 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,049 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:43,049 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,050 inString WARNING buffer empty
+2018-12-22 08:53:43,164 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,165 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,166 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,167 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,168 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,170 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,171 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,172 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,173 inImage DEBUG isNew() = False, no readable data
+2018-12-22 08:53:43,174 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:43,174 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,175 inString WARNING buffer empty
+2018-12-22 08:53:43,287 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:53:43,288 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,288 inString WARNING buffer empty
+2018-12-22 08:53:43,405 inImage DEBUG isNew() = True, readable data: 2
+2018-12-22 08:53:43,405 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,406 inString WARNING buffer empty
+2018-12-22 08:53:43,522 inImage DEBUG isNew() = True, readable data: 2
+2018-12-22 08:53:43,523 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,523 inString WARNING buffer empty
+2018-12-22 08:53:43,639 inImage DEBUG isNew() = True, readable data: 3
+2018-12-22 08:53:43,639 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,640 inString WARNING buffer empty
+2018-12-22 08:53:43,647 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:43,755 inImage DEBUG isNew() = True, readable data: 3
+2018-12-22 08:53:43,755 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,755 inString WARNING buffer empty
+2018-12-22 08:53:43,871 inImage DEBUG isNew() = True, readable data: 4
+2018-12-22 08:53:43,871 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,871 inString WARNING buffer empty
+2018-12-22 08:53:43,989 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:53:43,989 inImage DEBUG data read succeeded
+2018-12-22 08:53:43,990 inString WARNING buffer empty
+2018-12-22 08:53:44,105 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:53:44,106 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,106 inString WARNING buffer empty
+2018-12-22 08:53:44,224 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:44,224 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,224 inString WARNING buffer empty
+2018-12-22 08:53:44,338 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:44,338 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,339 inString WARNING buffer empty
+2018-12-22 08:53:44,453 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:44,453 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,454 inString WARNING buffer empty
+2018-12-22 08:53:44,568 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:44,568 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,569 inString WARNING buffer empty
+2018-12-22 08:53:44,680 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:44,688 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:44,689 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,689 inString WARNING buffer empty
+2018-12-22 08:53:44,804 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:44,804 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,805 inString WARNING buffer empty
+2018-12-22 08:53:44,919 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:44,920 inImage DEBUG data read succeeded
+2018-12-22 08:53:44,920 inString WARNING buffer empty
+2018-12-22 08:53:45,036 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,036 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,036 inString WARNING buffer empty
+2018-12-22 08:53:45,156 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,157 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,157 inString WARNING buffer empty
+2018-12-22 08:53:45,272 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,272 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,273 inString WARNING buffer empty
+2018-12-22 08:53:45,390 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,390 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,391 inString WARNING buffer empty
+2018-12-22 08:53:45,505 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,506 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,506 inString WARNING buffer empty
+2018-12-22 08:53:45,621 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,621 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,621 inString WARNING buffer empty
+2018-12-22 08:53:45,628 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:45,735 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,735 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,736 inString WARNING buffer empty
+2018-12-22 08:53:45,851 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,852 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,853 inString WARNING buffer empty
+2018-12-22 08:53:45,968 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:45,968 inImage DEBUG data read succeeded
+2018-12-22 08:53:45,969 inString WARNING buffer empty
+2018-12-22 08:53:46,084 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:46,085 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,085 inString WARNING buffer empty
+2018-12-22 08:53:46,201 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:46,201 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,202 inString WARNING buffer empty
+2018-12-22 08:53:46,319 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:46,319 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,321 inString WARNING buffer empty
+2018-12-22 08:53:46,436 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:46,437 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,437 inString WARNING buffer empty
+2018-12-22 08:53:46,551 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:46,551 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,552 inString WARNING buffer empty
+2018-12-22 08:53:46,660 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:46,670 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:46,670 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,671 inString WARNING buffer empty
+2018-12-22 08:53:46,787 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:46,788 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,788 inString WARNING buffer empty
+2018-12-22 08:53:46,904 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:46,904 inImage DEBUG data read succeeded
+2018-12-22 08:53:46,905 inString WARNING buffer empty
+2018-12-22 08:53:47,021 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:47,021 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,022 inString WARNING buffer empty
+2018-12-22 08:53:47,138 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:47,138 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,139 inString WARNING buffer empty
+2018-12-22 08:53:47,256 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:47,257 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,257 inString WARNING buffer empty
+2018-12-22 08:53:47,374 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:47,374 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,375 inString WARNING buffer empty
+2018-12-22 08:53:47,491 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:47,491 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,491 inString WARNING buffer empty
+2018-12-22 08:53:47,608 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:47,608 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,608 inString WARNING buffer empty
+2018-12-22 08:53:47,718 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:47,728 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:47,729 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,729 inString WARNING buffer empty
+2018-12-22 08:53:47,845 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:47,845 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,845 inString WARNING buffer empty
+2018-12-22 08:53:47,962 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:47,962 inImage DEBUG data read succeeded
+2018-12-22 08:53:47,963 inString WARNING buffer empty
+2018-12-22 08:53:48,083 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,084 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,084 inString WARNING buffer empty
+2018-12-22 08:53:48,200 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,200 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,200 inString WARNING buffer empty
+2018-12-22 08:53:48,314 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,315 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,315 inString WARNING buffer empty
+2018-12-22 08:53:48,432 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,432 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,432 inString WARNING buffer empty
+2018-12-22 08:53:48,546 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,546 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,547 inString WARNING buffer empty
+2018-12-22 08:53:48,658 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:48,666 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,666 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,667 inString WARNING buffer empty
+2018-12-22 08:53:48,786 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,786 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,787 inString WARNING buffer empty
+2018-12-22 08:53:48,904 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:48,904 inImage DEBUG data read succeeded
+2018-12-22 08:53:48,905 inString WARNING buffer empty
+2018-12-22 08:53:49,020 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,020 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,020 inString WARNING buffer empty
+2018-12-22 08:53:49,135 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,135 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,135 inString WARNING buffer empty
+2018-12-22 08:53:49,255 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,255 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,256 inString WARNING buffer empty
+2018-12-22 08:53:49,374 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,374 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,375 inString WARNING buffer empty
+2018-12-22 08:53:49,496 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,496 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,497 inString WARNING buffer empty
+2018-12-22 08:53:49,616 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,616 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,617 inString WARNING buffer empty
+2018-12-22 08:53:49,620 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:49,736 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,736 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,736 inString WARNING buffer empty
+2018-12-22 08:53:49,853 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,854 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,854 inString WARNING buffer empty
+2018-12-22 08:53:49,971 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:49,972 inImage DEBUG data read succeeded
+2018-12-22 08:53:49,972 inString WARNING buffer empty
+2018-12-22 08:53:50,090 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,091 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,091 inString WARNING buffer empty
+2018-12-22 08:53:50,206 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,206 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,207 inString WARNING buffer empty
+2018-12-22 08:53:50,322 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,322 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,322 inString WARNING buffer empty
+2018-12-22 08:53:50,437 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,438 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,438 inString WARNING buffer empty
+2018-12-22 08:53:50,555 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,556 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,556 inString WARNING buffer empty
+2018-12-22 08:53:50,666 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:50,676 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,676 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,677 inString WARNING buffer empty
+2018-12-22 08:53:50,792 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,792 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,793 inString WARNING buffer empty
+2018-12-22 08:53:50,907 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:50,908 inImage DEBUG data read succeeded
+2018-12-22 08:53:50,908 inString WARNING buffer empty
+2018-12-22 08:53:51,025 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,026 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,026 inString WARNING buffer empty
+2018-12-22 08:53:51,142 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,143 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,143 inString WARNING buffer empty
+2018-12-22 08:53:51,258 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,258 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,259 inString WARNING buffer empty
+2018-12-22 08:53:51,374 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,375 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,375 inString WARNING buffer empty
+2018-12-22 08:53:51,490 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,490 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,490 inString WARNING buffer empty
+2018-12-22 08:53:51,607 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,607 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,607 inString WARNING buffer empty
+2018-12-22 08:53:51,718 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:51,726 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,726 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,727 inString WARNING buffer empty
+2018-12-22 08:53:51,842 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,842 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,842 inString WARNING buffer empty
+2018-12-22 08:53:51,964 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:51,964 inImage DEBUG data read succeeded
+2018-12-22 08:53:51,965 inString WARNING buffer empty
+2018-12-22 08:53:52,082 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,082 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,083 inString WARNING buffer empty
+2018-12-22 08:53:52,197 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,197 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,198 inString WARNING buffer empty
+2018-12-22 08:53:52,313 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,313 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,314 inString WARNING buffer empty
+2018-12-22 08:53:52,428 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,428 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,429 inString WARNING buffer empty
+2018-12-22 08:53:52,544 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,544 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,545 inString WARNING buffer empty
+2018-12-22 08:53:52,664 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,664 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,664 inString WARNING buffer empty
+2018-12-22 08:53:52,670 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:52,782 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,782 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,782 inString WARNING buffer empty
+2018-12-22 08:53:52,899 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:52,899 inImage DEBUG data read succeeded
+2018-12-22 08:53:52,900 inString WARNING buffer empty
+2018-12-22 08:53:53,021 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:53,022 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,022 inString WARNING buffer empty
+2018-12-22 08:53:53,141 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:53,141 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,141 inString WARNING buffer empty
+2018-12-22 08:53:53,259 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:53,259 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,260 inString WARNING buffer empty
+2018-12-22 08:53:53,373 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:53,373 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,374 inString WARNING buffer empty
+2018-12-22 08:53:53,491 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:53,492 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,492 inString WARNING buffer empty
+2018-12-22 08:53:53,608 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:53,608 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,609 inString WARNING buffer empty
+2018-12-22 08:53:53,615 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:53,725 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:53,725 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,726 inString WARNING buffer empty
+2018-12-22 08:53:53,841 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:53,841 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,841 inString WARNING buffer empty
+2018-12-22 08:53:53,956 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:53,956 inImage DEBUG data read succeeded
+2018-12-22 08:53:53,957 inString WARNING buffer empty
+2018-12-22 08:53:54,073 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,073 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,074 inString WARNING buffer empty
+2018-12-22 08:53:54,190 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,191 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,191 inString WARNING buffer empty
+2018-12-22 08:53:54,309 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,309 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,310 inString WARNING buffer empty
+2018-12-22 08:53:54,425 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,426 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,426 inString WARNING buffer empty
+2018-12-22 08:53:54,541 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,542 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,542 inString WARNING buffer empty
+2018-12-22 08:53:54,656 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,656 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,657 inString WARNING buffer empty
+2018-12-22 08:53:54,716 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:54,773 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,773 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,773 inString WARNING buffer empty
+2018-12-22 08:53:54,889 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:54,890 inImage DEBUG data read succeeded
+2018-12-22 08:53:54,890 inString WARNING buffer empty
+2018-12-22 08:53:55,005 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:55,005 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,005 inString WARNING buffer empty
+2018-12-22 08:53:55,123 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,123 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,124 inString WARNING buffer empty
+2018-12-22 08:53:55,240 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,240 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,240 inString WARNING buffer empty
+2018-12-22 08:53:55,354 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,354 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,355 inString WARNING buffer empty
+2018-12-22 08:53:55,471 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,471 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,471 inString WARNING buffer empty
+2018-12-22 08:53:55,590 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,591 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,591 inString WARNING buffer empty
+2018-12-22 08:53:55,701 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:55,709 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,710 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,710 inString WARNING buffer empty
+2018-12-22 08:53:55,825 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,826 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,826 inString WARNING buffer empty
+2018-12-22 08:53:55,941 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:55,941 inImage DEBUG data read succeeded
+2018-12-22 08:53:55,941 inString WARNING buffer empty
+2018-12-22 08:53:56,056 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:56,056 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,057 inString WARNING buffer empty
+2018-12-22 08:53:56,173 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:56,173 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,174 inString WARNING buffer empty
+2018-12-22 08:53:56,290 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:56,290 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,290 inString WARNING buffer empty
+2018-12-22 08:53:56,405 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:53:56,406 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,406 inString WARNING buffer empty
+2018-12-22 08:53:56,519 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:56,519 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,520 inString WARNING buffer empty
+2018-12-22 08:53:56,638 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:56,638 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,638 inString WARNING buffer empty
+2018-12-22 08:53:56,645 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:56,754 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:56,754 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,755 inString WARNING buffer empty
+2018-12-22 08:53:56,867 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:56,867 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,868 inString WARNING buffer empty
+2018-12-22 08:53:56,982 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:56,982 inImage DEBUG data read succeeded
+2018-12-22 08:53:56,982 inString WARNING buffer empty
+2018-12-22 08:53:57,097 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,098 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,098 inString WARNING buffer empty
+2018-12-22 08:53:57,212 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,212 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,213 inString WARNING buffer empty
+2018-12-22 08:53:57,326 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,327 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,327 inString WARNING buffer empty
+2018-12-22 08:53:57,443 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,443 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,443 inString WARNING buffer empty
+2018-12-22 08:53:57,558 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,558 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,559 inString WARNING buffer empty
+2018-12-22 08:53:57,666 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:57,675 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,675 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,676 inString WARNING buffer empty
+2018-12-22 08:53:57,790 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,790 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,790 inString WARNING buffer empty
+2018-12-22 08:53:57,905 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:57,905 inImage DEBUG data read succeeded
+2018-12-22 08:53:57,906 inString WARNING buffer empty
+2018-12-22 08:53:58,023 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:58,023 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,023 inString WARNING buffer empty
+2018-12-22 08:53:58,141 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:58,142 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,142 inString WARNING buffer empty
+2018-12-22 08:53:58,260 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:58,260 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,260 inString WARNING buffer empty
+2018-12-22 08:53:58,376 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:53:58,376 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,376 inString WARNING buffer empty
+2018-12-22 08:53:58,489 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:58,489 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,489 inString WARNING buffer empty
+2018-12-22 08:53:58,604 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:58,604 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,605 inString WARNING buffer empty
+2018-12-22 08:53:58,715 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:58,724 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:58,724 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,724 inString WARNING buffer empty
+2018-12-22 08:53:58,842 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:58,842 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,842 inString WARNING buffer empty
+2018-12-22 08:53:58,956 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:58,957 inImage DEBUG data read succeeded
+2018-12-22 08:53:58,957 inString WARNING buffer empty
+2018-12-22 08:53:59,072 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,072 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,072 inString WARNING buffer empty
+2018-12-22 08:53:59,187 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,187 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,187 inString WARNING buffer empty
+2018-12-22 08:53:59,303 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,304 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,304 inString WARNING buffer empty
+2018-12-22 08:53:59,418 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,418 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,418 inString WARNING buffer empty
+2018-12-22 08:53:59,532 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,532 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,533 inString WARNING buffer empty
+2018-12-22 08:53:59,650 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,650 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,651 inString WARNING buffer empty
+2018-12-22 08:53:59,656 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:53:59,767 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,767 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,768 inString WARNING buffer empty
+2018-12-22 08:53:59,883 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,883 inImage DEBUG data read succeeded
+2018-12-22 08:53:59,884 inString WARNING buffer empty
+2018-12-22 08:53:59,999 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:53:59,999 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,000 inString WARNING buffer empty
+2018-12-22 08:54:00,116 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:00,116 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,117 inString WARNING buffer empty
+2018-12-22 08:54:00,232 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:00,232 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,233 inString WARNING buffer empty
+2018-12-22 08:54:00,352 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:00,352 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,353 inString WARNING buffer empty
+2018-12-22 08:54:00,468 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:00,469 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,469 inString WARNING buffer empty
+2018-12-22 08:54:00,587 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:00,588 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,588 inString WARNING buffer empty
+2018-12-22 08:54:00,697 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:00,705 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:00,706 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,706 inString WARNING buffer empty
+2018-12-22 08:54:00,823 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:00,823 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,824 inString WARNING buffer empty
+2018-12-22 08:54:00,941 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:00,941 inImage DEBUG data read succeeded
+2018-12-22 08:54:00,942 inString WARNING buffer empty
+2018-12-22 08:54:01,056 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,057 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,057 inString WARNING buffer empty
+2018-12-22 08:54:01,174 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,175 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,175 inString WARNING buffer empty
+2018-12-22 08:54:01,289 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,290 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,290 inString WARNING buffer empty
+2018-12-22 08:54:01,404 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,404 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,404 inString WARNING buffer empty
+2018-12-22 08:54:01,522 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,522 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,522 inString WARNING buffer empty
+2018-12-22 08:54:01,641 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,641 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,642 inString WARNING buffer empty
+2018-12-22 08:54:01,649 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:01,757 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,757 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,757 inString WARNING buffer empty
+2018-12-22 08:54:01,872 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,872 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,873 inString WARNING buffer empty
+2018-12-22 08:54:01,989 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:01,989 inImage DEBUG data read succeeded
+2018-12-22 08:54:01,989 inString WARNING buffer empty
+2018-12-22 08:54:02,104 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,104 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,105 inString WARNING buffer empty
+2018-12-22 08:54:02,220 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,220 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,221 inString WARNING buffer empty
+2018-12-22 08:54:02,337 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,337 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,337 inString WARNING buffer empty
+2018-12-22 08:54:02,450 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,451 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,451 inString WARNING buffer empty
+2018-12-22 08:54:02,567 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,567 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,568 inString WARNING buffer empty
+2018-12-22 08:54:02,628 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:02,685 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,685 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,685 inString WARNING buffer empty
+2018-12-22 08:54:02,800 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:02,800 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,801 inString WARNING buffer empty
+2018-12-22 08:54:02,916 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:02,916 inImage DEBUG data read succeeded
+2018-12-22 08:54:02,917 inString WARNING buffer empty
+2018-12-22 08:54:03,033 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:03,033 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,033 inString WARNING buffer empty
+2018-12-22 08:54:03,150 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:03,150 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,150 inString WARNING buffer empty
+2018-12-22 08:54:03,264 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,265 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,265 inString WARNING buffer empty
+2018-12-22 08:54:03,381 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,381 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,381 inString WARNING buffer empty
+2018-12-22 08:54:03,499 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,500 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,500 inString WARNING buffer empty
+2018-12-22 08:54:03,617 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,618 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,618 inString WARNING buffer empty
+2018-12-22 08:54:03,627 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:03,736 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,736 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,736 inString WARNING buffer empty
+2018-12-22 08:54:03,852 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,852 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,853 inString WARNING buffer empty
+2018-12-22 08:54:03,971 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:03,971 inImage DEBUG data read succeeded
+2018-12-22 08:54:03,972 inString WARNING buffer empty
+2018-12-22 08:54:04,087 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,087 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,087 inString WARNING buffer empty
+2018-12-22 08:54:04,202 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,202 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,203 inString WARNING buffer empty
+2018-12-22 08:54:04,317 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,318 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,319 inString WARNING buffer empty
+2018-12-22 08:54:04,439 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,439 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,440 inString WARNING buffer empty
+2018-12-22 08:54:04,556 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,556 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,556 inString WARNING buffer empty
+2018-12-22 08:54:04,667 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:04,674 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,674 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,675 inString WARNING buffer empty
+2018-12-22 08:54:04,796 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,796 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,797 inString WARNING buffer empty
+2018-12-22 08:54:04,916 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:04,916 inImage DEBUG data read succeeded
+2018-12-22 08:54:04,917 inString WARNING buffer empty
+2018-12-22 08:54:05,035 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,035 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,036 inString WARNING buffer empty
+2018-12-22 08:54:05,154 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,154 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,155 inString WARNING buffer empty
+2018-12-22 08:54:05,271 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,271 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,272 inString WARNING buffer empty
+2018-12-22 08:54:05,388 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,388 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,388 inString WARNING buffer empty
+2018-12-22 08:54:05,503 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,503 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,503 inString WARNING buffer empty
+2018-12-22 08:54:05,620 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,620 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,621 inString WARNING buffer empty
+2018-12-22 08:54:05,626 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:05,741 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,742 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,742 inString WARNING buffer empty
+2018-12-22 08:54:05,862 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,862 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,863 inString WARNING buffer empty
+2018-12-22 08:54:05,983 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:05,983 inImage DEBUG data read succeeded
+2018-12-22 08:54:05,983 inString WARNING buffer empty
+2018-12-22 08:54:06,100 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,100 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,100 inString WARNING buffer empty
+2018-12-22 08:54:06,215 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,215 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,216 inString WARNING buffer empty
+2018-12-22 08:54:06,333 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,333 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,334 inString WARNING buffer empty
+2018-12-22 08:54:06,454 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,454 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,455 inString WARNING buffer empty
+2018-12-22 08:54:06,573 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,573 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,574 inString WARNING buffer empty
+2018-12-22 08:54:06,685 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:06,693 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,693 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,693 inString WARNING buffer empty
+2018-12-22 08:54:06,807 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,807 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,808 inString WARNING buffer empty
+2018-12-22 08:54:06,922 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:06,923 inImage DEBUG data read succeeded
+2018-12-22 08:54:06,924 inString WARNING buffer empty
+2018-12-22 08:54:07,044 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,045 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,045 inString WARNING buffer empty
+2018-12-22 08:54:07,160 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,161 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,161 inString WARNING buffer empty
+2018-12-22 08:54:07,275 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,275 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,276 inString WARNING buffer empty
+2018-12-22 08:54:07,392 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,392 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,393 inString WARNING buffer empty
+2018-12-22 08:54:07,511 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,512 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,512 inString WARNING buffer empty
+2018-12-22 08:54:07,628 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,628 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,629 inString WARNING buffer empty
+2018-12-22 08:54:07,688 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:07,753 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,754 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,754 inString WARNING buffer empty
+2018-12-22 08:54:07,873 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,873 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,873 inString WARNING buffer empty
+2018-12-22 08:54:07,989 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:07,989 inImage DEBUG data read succeeded
+2018-12-22 08:54:07,990 inString WARNING buffer empty
+2018-12-22 08:54:08,106 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,106 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,107 inString WARNING buffer empty
+2018-12-22 08:54:08,223 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,223 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,224 inString WARNING buffer empty
+2018-12-22 08:54:08,340 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,341 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,341 inString WARNING buffer empty
+2018-12-22 08:54:08,459 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,459 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,459 inString WARNING buffer empty
+2018-12-22 08:54:08,578 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,578 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,578 inString WARNING buffer empty
+2018-12-22 08:54:08,693 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:08,702 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,702 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,702 inString WARNING buffer empty
+2018-12-22 08:54:08,815 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,815 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,816 inString WARNING buffer empty
+2018-12-22 08:54:08,933 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:08,933 inImage DEBUG data read succeeded
+2018-12-22 08:54:08,934 inString WARNING buffer empty
+2018-12-22 08:54:09,054 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,054 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,054 inString WARNING buffer empty
+2018-12-22 08:54:09,170 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,170 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,171 inString WARNING buffer empty
+2018-12-22 08:54:09,288 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,288 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,289 inString WARNING buffer empty
+2018-12-22 08:54:09,406 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,406 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,407 inString WARNING buffer empty
+2018-12-22 08:54:09,522 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,522 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,523 inString WARNING buffer empty
+2018-12-22 08:54:09,642 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,643 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,646 inString WARNING buffer empty
+2018-12-22 08:54:09,651 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:09,760 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,761 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,761 inString WARNING buffer empty
+2018-12-22 08:54:09,877 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,878 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,878 inString WARNING buffer empty
+2018-12-22 08:54:09,992 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:09,992 inImage DEBUG data read succeeded
+2018-12-22 08:54:09,993 inString WARNING buffer empty
+2018-12-22 08:54:10,108 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,109 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,109 inString WARNING buffer empty
+2018-12-22 08:54:10,224 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,224 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,225 inString WARNING buffer empty
+2018-12-22 08:54:10,340 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,341 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,341 inString WARNING buffer empty
+2018-12-22 08:54:10,458 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,458 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,459 inString WARNING buffer empty
+2018-12-22 08:54:10,582 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,583 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,583 inString WARNING buffer empty
+2018-12-22 08:54:10,644 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:10,701 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,701 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,702 inString WARNING buffer empty
+2018-12-22 08:54:10,819 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,819 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,819 inString WARNING buffer empty
+2018-12-22 08:54:10,933 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:10,934 inImage DEBUG data read succeeded
+2018-12-22 08:54:10,934 inString WARNING buffer empty
+2018-12-22 08:54:11,049 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,049 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,050 inString WARNING buffer empty
+2018-12-22 08:54:11,163 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,164 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,164 inString WARNING buffer empty
+2018-12-22 08:54:11,278 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,279 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,279 inString WARNING buffer empty
+2018-12-22 08:54:11,394 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,395 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,395 inString WARNING buffer empty
+2018-12-22 08:54:11,510 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,510 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,511 inString WARNING buffer empty
+2018-12-22 08:54:11,628 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,628 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,628 inString WARNING buffer empty
+2018-12-22 08:54:11,634 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:11,744 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,745 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,745 inString WARNING buffer empty
+2018-12-22 08:54:11,861 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,861 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,862 inString WARNING buffer empty
+2018-12-22 08:54:11,980 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:11,980 inImage DEBUG data read succeeded
+2018-12-22 08:54:11,981 inString WARNING buffer empty
+2018-12-22 08:54:12,097 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,098 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,098 inString WARNING buffer empty
+2018-12-22 08:54:12,212 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,213 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,213 inString WARNING buffer empty
+2018-12-22 08:54:12,329 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,329 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,330 inString WARNING buffer empty
+2018-12-22 08:54:12,451 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,451 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,451 inString WARNING buffer empty
+2018-12-22 08:54:12,567 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,567 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,567 inString WARNING buffer empty
+2018-12-22 08:54:12,678 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:12,686 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,686 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,686 inString WARNING buffer empty
+2018-12-22 08:54:12,803 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,803 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,803 inString WARNING buffer empty
+2018-12-22 08:54:12,922 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:12,923 inImage DEBUG data read succeeded
+2018-12-22 08:54:12,923 inString WARNING buffer empty
+2018-12-22 08:54:13,040 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,040 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,040 inString WARNING buffer empty
+2018-12-22 08:54:13,161 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,161 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,161 inString WARNING buffer empty
+2018-12-22 08:54:13,277 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,277 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,277 inString WARNING buffer empty
+2018-12-22 08:54:13,397 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,397 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,398 inString WARNING buffer empty
+2018-12-22 08:54:13,513 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,514 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,514 inString WARNING buffer empty
+2018-12-22 08:54:13,635 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,635 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,635 inString WARNING buffer empty
+2018-12-22 08:54:13,645 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:13,754 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,754 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,754 inString WARNING buffer empty
+2018-12-22 08:54:13,872 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,872 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,873 inString WARNING buffer empty
+2018-12-22 08:54:13,989 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:13,989 inImage DEBUG data read succeeded
+2018-12-22 08:54:13,989 inString WARNING buffer empty
+2018-12-22 08:54:14,106 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,106 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,107 inString WARNING buffer empty
+2018-12-22 08:54:14,222 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,222 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,222 inString WARNING buffer empty
+2018-12-22 08:54:14,338 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,338 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,339 inString WARNING buffer empty
+2018-12-22 08:54:14,459 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,459 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,460 inString WARNING buffer empty
+2018-12-22 08:54:14,578 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,578 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,579 inString WARNING buffer empty
+2018-12-22 08:54:14,639 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:14,694 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,695 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,695 inString WARNING buffer empty
+2018-12-22 08:54:14,812 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,812 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,812 inString WARNING buffer empty
+2018-12-22 08:54:14,930 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:14,931 inImage DEBUG data read succeeded
+2018-12-22 08:54:14,931 inString WARNING buffer empty
+2018-12-22 08:54:15,051 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:15,052 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,052 inString WARNING buffer empty
+2018-12-22 08:54:15,168 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,169 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,169 inString WARNING buffer empty
+2018-12-22 08:54:15,286 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,287 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,287 inString WARNING buffer empty
+2018-12-22 08:54:15,402 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,402 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,403 inString WARNING buffer empty
+2018-12-22 08:54:15,519 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,519 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,520 inString WARNING buffer empty
+2018-12-22 08:54:15,636 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,636 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,637 inString WARNING buffer empty
+2018-12-22 08:54:15,646 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:15,753 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,753 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,754 inString WARNING buffer empty
+2018-12-22 08:54:15,870 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,870 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,870 inString WARNING buffer empty
+2018-12-22 08:54:15,985 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:15,985 inImage DEBUG data read succeeded
+2018-12-22 08:54:15,986 inString WARNING buffer empty
+2018-12-22 08:54:16,104 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,104 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,104 inString WARNING buffer empty
+2018-12-22 08:54:16,219 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,219 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,220 inString WARNING buffer empty
+2018-12-22 08:54:16,335 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,335 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,335 inString WARNING buffer empty
+2018-12-22 08:54:16,450 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,451 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,451 inString WARNING buffer empty
+2018-12-22 08:54:16,567 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,567 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,567 inString WARNING buffer empty
+2018-12-22 08:54:16,680 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:16,689 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,689 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,690 inString WARNING buffer empty
+2018-12-22 08:54:16,808 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,808 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,809 inString WARNING buffer empty
+2018-12-22 08:54:16,930 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:16,930 inImage DEBUG data read succeeded
+2018-12-22 08:54:16,930 inString WARNING buffer empty
+2018-12-22 08:54:17,046 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:17,046 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,047 inString WARNING buffer empty
+2018-12-22 08:54:17,162 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:17,162 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,163 inString WARNING buffer empty
+2018-12-22 08:54:17,277 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:17,277 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,278 inString WARNING buffer empty
+2018-12-22 08:54:17,394 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:17,394 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,394 inString WARNING buffer empty
+2018-12-22 08:54:17,514 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:17,514 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,514 inString WARNING buffer empty
+2018-12-22 08:54:17,635 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:17,635 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,636 inString WARNING buffer empty
+2018-12-22 08:54:17,640 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:17,752 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:17,752 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,753 inString WARNING buffer empty
+2018-12-22 08:54:17,867 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:17,867 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,868 inString WARNING buffer empty
+2018-12-22 08:54:17,984 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:17,984 inImage DEBUG data read succeeded
+2018-12-22 08:54:17,984 inString WARNING buffer empty
+2018-12-22 08:54:18,099 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,099 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,100 inString WARNING buffer empty
+2018-12-22 08:54:18,217 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,217 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,217 inString WARNING buffer empty
+2018-12-22 08:54:18,335 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,335 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,336 inString WARNING buffer empty
+2018-12-22 08:54:18,457 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,457 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,458 inString WARNING buffer empty
+2018-12-22 08:54:18,577 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,578 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,578 inString WARNING buffer empty
+2018-12-22 08:54:18,689 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:18,699 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,699 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,699 inString WARNING buffer empty
+2018-12-22 08:54:18,818 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,818 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,819 inString WARNING buffer empty
+2018-12-22 08:54:18,936 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:18,936 inImage DEBUG data read succeeded
+2018-12-22 08:54:18,936 inString WARNING buffer empty
+2018-12-22 08:54:19,051 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,051 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,052 inString WARNING buffer empty
+2018-12-22 08:54:19,167 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,167 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,167 inString WARNING buffer empty
+2018-12-22 08:54:19,287 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,287 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,288 inString WARNING buffer empty
+2018-12-22 08:54:19,402 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,403 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,403 inString WARNING buffer empty
+2018-12-22 08:54:19,518 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,518 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,519 inString WARNING buffer empty
+2018-12-22 08:54:19,634 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,635 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,635 inString WARNING buffer empty
+2018-12-22 08:54:19,642 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:19,751 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,751 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,751 inString WARNING buffer empty
+2018-12-22 08:54:19,869 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,869 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,870 inString WARNING buffer empty
+2018-12-22 08:54:19,984 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:19,984 inImage DEBUG data read succeeded
+2018-12-22 08:54:19,985 inString WARNING buffer empty
+2018-12-22 08:54:20,105 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:20,105 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,105 inString WARNING buffer empty
+2018-12-22 08:54:20,222 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:20,223 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,223 inString WARNING buffer empty
+2018-12-22 08:54:20,339 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:20,340 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,340 inString WARNING buffer empty
+2018-12-22 08:54:20,456 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:20,457 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,457 inString WARNING buffer empty
+2018-12-22 08:54:20,575 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:20,575 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,575 inString WARNING buffer empty
+2018-12-22 08:54:20,690 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:20,701 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:20,702 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,702 inString WARNING buffer empty
+2018-12-22 08:54:20,818 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:20,818 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,818 inString WARNING buffer empty
+2018-12-22 08:54:20,936 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:20,937 inImage DEBUG data read succeeded
+2018-12-22 08:54:20,937 inString WARNING buffer empty
+2018-12-22 08:54:21,059 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,059 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,059 inString WARNING buffer empty
+2018-12-22 08:54:21,178 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,178 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,178 inString WARNING buffer empty
+2018-12-22 08:54:21,297 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,297 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,297 inString WARNING buffer empty
+2018-12-22 08:54:21,413 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,413 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,413 inString WARNING buffer empty
+2018-12-22 08:54:21,528 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,528 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,529 inString WARNING buffer empty
+2018-12-22 08:54:21,646 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,647 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,647 inString WARNING buffer empty
+2018-12-22 08:54:21,654 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:21,762 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,762 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,762 inString WARNING buffer empty
+2018-12-22 08:54:21,881 inImage DEBUG isNew() = True, readable data: 5
+2018-12-22 08:54:21,882 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,882 inString WARNING buffer empty
+2018-12-22 08:54:21,999 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:21,999 inImage DEBUG data read succeeded
+2018-12-22 08:54:21,999 inString WARNING buffer empty
+2018-12-22 08:54:22,113 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:22,114 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,114 inString WARNING buffer empty
+2018-12-22 08:54:22,232 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,232 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,232 inString WARNING buffer empty
+2018-12-22 08:54:22,351 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,351 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,352 inString WARNING buffer empty
+2018-12-22 08:54:22,471 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,472 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,472 inString WARNING buffer empty
+2018-12-22 08:54:22,589 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,590 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,590 inString WARNING buffer empty
+2018-12-22 08:54:22,701 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:22,709 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,709 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,709 inString WARNING buffer empty
+2018-12-22 08:54:22,826 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,826 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,827 inString WARNING buffer empty
+2018-12-22 08:54:22,942 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:22,942 inImage DEBUG data read succeeded
+2018-12-22 08:54:22,943 inString WARNING buffer empty
+2018-12-22 08:54:23,060 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,060 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,061 inString WARNING buffer empty
+2018-12-22 08:54:23,178 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,179 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,179 inString WARNING buffer empty
+2018-12-22 08:54:23,298 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,299 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,299 inString WARNING buffer empty
+2018-12-22 08:54:23,415 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,415 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,416 inString WARNING buffer empty
+2018-12-22 08:54:23,531 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,531 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,532 inString WARNING buffer empty
+2018-12-22 08:54:23,646 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,647 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,647 inString WARNING buffer empty
+2018-12-22 08:54:23,658 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:23,767 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,768 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,768 inString WARNING buffer empty
+2018-12-22 08:54:23,887 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:23,887 inImage DEBUG data read succeeded
+2018-12-22 08:54:23,887 inString WARNING buffer empty
+2018-12-22 08:54:24,004 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,005 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,005 inString WARNING buffer empty
+2018-12-22 08:54:24,120 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,120 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,121 inString WARNING buffer empty
+2018-12-22 08:54:24,240 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,240 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,241 inString WARNING buffer empty
+2018-12-22 08:54:24,358 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,359 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,359 inString WARNING buffer empty
+2018-12-22 08:54:24,477 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,477 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,478 inString WARNING buffer empty
+2018-12-22 08:54:24,595 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,595 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,595 inString WARNING buffer empty
+2018-12-22 08:54:24,704 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:24,713 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,713 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,714 inString WARNING buffer empty
+2018-12-22 08:54:24,831 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,832 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,832 inString WARNING buffer empty
+2018-12-22 08:54:24,949 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:24,950 inImage DEBUG data read succeeded
+2018-12-22 08:54:24,950 inString WARNING buffer empty
+2018-12-22 08:54:25,065 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,066 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,066 inString WARNING buffer empty
+2018-12-22 08:54:25,182 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,182 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,183 inString WARNING buffer empty
+2018-12-22 08:54:25,298 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,298 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,298 inString WARNING buffer empty
+2018-12-22 08:54:25,415 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,415 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,416 inString WARNING buffer empty
+2018-12-22 08:54:25,534 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,534 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,534 inString WARNING buffer empty
+2018-12-22 08:54:25,653 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,653 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,653 inString WARNING buffer empty
+2018-12-22 08:54:25,663 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:25,770 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:25,770 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,770 inString WARNING buffer empty
+2018-12-22 08:54:25,886 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:25,886 inImage DEBUG data read succeeded
+2018-12-22 08:54:25,887 inString WARNING buffer empty
+2018-12-22 08:54:26,002 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,002 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,003 inString WARNING buffer empty
+2018-12-22 08:54:26,121 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,121 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,121 inString WARNING buffer empty
+2018-12-22 08:54:26,237 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,238 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,238 inString WARNING buffer empty
+2018-12-22 08:54:26,354 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,354 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,354 inString WARNING buffer empty
+2018-12-22 08:54:26,469 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,469 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,470 inString WARNING buffer empty
+2018-12-22 08:54:26,584 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,584 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,584 inString WARNING buffer empty
+2018-12-22 08:54:26,646 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:26,702 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,703 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,703 inString WARNING buffer empty
+2018-12-22 08:54:26,818 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,818 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,819 inString WARNING buffer empty
+2018-12-22 08:54:26,934 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:26,934 inImage DEBUG data read succeeded
+2018-12-22 08:54:26,935 inString WARNING buffer empty
+2018-12-22 08:54:27,049 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,050 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,050 inString WARNING buffer empty
+2018-12-22 08:54:27,167 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,167 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,167 inString WARNING buffer empty
+2018-12-22 08:54:27,283 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,283 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,284 inString WARNING buffer empty
+2018-12-22 08:54:27,398 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,399 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,399 inString WARNING buffer empty
+2018-12-22 08:54:27,518 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,519 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,519 inString WARNING buffer empty
+2018-12-22 08:54:27,634 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,635 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,635 inString WARNING buffer empty
+2018-12-22 08:54:27,641 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:27,753 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,754 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,754 inString WARNING buffer empty
+2018-12-22 08:54:27,870 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,870 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,870 inString WARNING buffer empty
+2018-12-22 08:54:27,986 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:27,986 inImage DEBUG data read succeeded
+2018-12-22 08:54:27,986 inString WARNING buffer empty
+2018-12-22 08:54:28,104 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:28,104 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,105 inString WARNING buffer empty
+2018-12-22 08:54:28,219 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,219 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,220 inString WARNING buffer empty
+2018-12-22 08:54:28,339 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,339 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,340 inString WARNING buffer empty
+2018-12-22 08:54:28,458 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,458 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,459 inString WARNING buffer empty
+2018-12-22 08:54:28,574 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,575 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,575 inString WARNING buffer empty
+2018-12-22 08:54:28,685 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:28,694 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,694 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,695 inString WARNING buffer empty
+2018-12-22 08:54:28,812 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,812 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,813 inString WARNING buffer empty
+2018-12-22 08:54:28,927 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:28,928 inImage DEBUG data read succeeded
+2018-12-22 08:54:28,928 inString WARNING buffer empty
+2018-12-22 08:54:29,045 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:29,045 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,046 inString WARNING buffer empty
+2018-12-22 08:54:29,164 inImage DEBUG isNew() = True, readable data: 6
+2018-12-22 08:54:29,164 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,165 inString WARNING buffer empty
+2018-12-22 08:54:29,281 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:29,281 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,282 inString WARNING buffer empty
+2018-12-22 08:54:29,399 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:29,399 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,399 inString WARNING buffer empty
+2018-12-22 08:54:29,516 inImage DEBUG isNew() = True, readable data: 7
+2018-12-22 08:54:29,516 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,516 inString WARNING buffer empty
+2018-12-22 08:54:29,634 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:29,634 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,635 inString WARNING buffer empty
+2018-12-22 08:54:29,644 ec_worker DEBUG getComponentState() = ACTIVE_STATE done
+2018-12-22 08:54:29,752 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:29,752 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,753 inString WARNING buffer empty
+2018-12-22 08:54:29,869 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:29,869 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,869 inString WARNING buffer empty
+2018-12-22 08:54:29,986 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:29,987 inImage DEBUG data read succeeded
+2018-12-22 08:54:29,987 inString WARNING buffer empty
+2018-12-22 08:54:30,102 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:30,103 inImage DEBUG data read succeeded
+2018-12-22 08:54:30,103 inString WARNING buffer empty
+2018-12-22 08:54:30,220 inImage DEBUG isNew() = True, readable data: 8
+2018-12-22 08:54:30,220 inImage DEBUG data read succeeded
+2018-12-22 08:54:30,220 inString WARNING buffer empty
+2018-12-22 08:54:30,328 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 389, in onExecute
+    objParam = detect(net, img, readData, self._CLASSES, self._recognitionRate[0])
+  File "Deep_LearningRTC.py", line 135, in detect
+    self._d_outFlag.data = 1;
+NameError: global name 'self' is not defined
+
+2018-12-22 08:54:30,328 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage db6f596b-3d3b-4ac3-be47-26b167e085ab
+2018-12-22 08:54:30,328 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString c1313cc7-59ad-4728-a872-6d6eb630180f
+2018-12-22 08:54:30,592 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:31,591 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:32,599 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:33,590 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:34,591 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:35,596 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:36,597 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:37,818 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 08:54:37,829 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:38,637 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:39,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:40,641 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:41,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:42,634 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:43,640 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:44,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:45,632 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:46,636 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:47,651 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:48,603 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:49,637 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:50,641 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:51,641 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:52,605 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:53,650 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:54,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:55,636 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:56,645 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:57,642 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:58,644 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:54:59,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:00,645 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:01,642 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:02,594 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:03,641 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:04,642 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:05,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:06,597 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:07,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:08,645 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:09,650 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:10,647 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:11,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:12,634 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:13,647 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:14,647 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:15,646 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:16,635 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:17,647 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:18,635 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:19,639 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:20,651 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:21,655 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:22,644 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:23,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:24,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:25,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:26,650 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:27,644 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:28,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:29,615 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:30,648 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:31,645 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:32,612 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:33,647 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:34,646 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:35,643 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:36,642 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:37,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:38,648 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:39,635 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:40,650 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:41,640 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:42,648 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:43,648 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:44,648 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:45,644 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:46,648 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:47,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:48,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:49,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:50,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:51,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:52,651 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:53,616 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:54,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:55,620 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:56,650 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:57,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:58,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:55:59,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:00,660 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:01,655 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:02,619 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:03,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:04,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:05,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:06,660 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:07,673 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:08,647 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:09,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:10,655 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:11,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:12,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:13,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:14,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:15,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:16,674 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:17,654 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:18,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:19,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:20,662 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:21,604 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:22,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:23,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:24,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:25,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:26,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:27,622 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:28,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:29,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:30,661 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:31,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:32,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:33,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:34,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:35,660 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:36,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:37,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:38,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:39,649 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:40,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:41,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:42,655 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:43,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:44,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:45,661 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:46,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:47,655 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:48,662 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:49,662 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:50,625 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:51,652 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:52,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:53,660 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:54,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:55,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:56,646 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:57,662 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:58,661 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:56:59,665 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:00,665 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:01,661 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:02,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:03,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:04,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:05,658 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:06,660 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:07,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:08,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:09,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:10,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:11,653 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:12,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:13,659 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:14,663 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:15,665 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:16,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:17,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:18,666 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:19,629 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:20,661 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:21,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:22,657 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:23,671 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:24,671 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:25,668 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:26,666 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:27,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:28,664 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:29,666 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:57:30,038 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 08:57:30,040 ec_base DEBUG Thread terminated.
+2018-12-22 08:57:30,040 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage db6f596b-3d3b-4ac3-be47-26b167e085ab
+2018-12-22 08:57:30,041 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString c1313cc7-59ad-4728-a872-6d6eb630180f
+2018-12-22 08:57:30,041 outFlag DEBUG disconnecting 0 connections.
+2018-12-22 08:57:30,043 outObjectParam DEBUG disconnecting 0 connections.
+2018-12-22 08:57:30,045 outImage DEBUG disconnecting 1 connections.
+2018-12-22 08:57:30,046 OutPortConnector DEBUG delete publisher
+2018-12-22 08:57:30,046 OutPortConnector DEBUG delete consumer
+2018-12-22 08:57:30,046 OutPortConnector DEBUG delete buffer
+2018-12-22 08:57:30,049 inString DEBUG disconnecting 1 connections.
+2018-12-22 08:57:30,052 inImage DEBUG disconnecting 1 connections.
+2018-12-22 08:57:30,054 ec_worker WARNING ExecutionContext is already stopped.
+2018-12-22 08:57:30,054 ec_base ERROR Invoking on_shutdown() for each RTC failed.
+2018-12-22 08:57:30,054 rtobject DEBUG Cleanup on Manager
+2018-12-22 08:57:30,057 manager DEBUG No pending works of ORB. Shutting down POA and ORB.
+2018-12-22 08:57:30,057 manager DEBUG POA Manager was deactivated.
+2018-12-22 08:57:30,058 manager DEBUG POA was destroyed.
+2018-12-22 08:57:30,059 manager DEBUG ORB was shutdown.

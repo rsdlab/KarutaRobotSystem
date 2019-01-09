@@ -1,0 +1,54 @@
+# karuta_arm_control CMake config file
+#
+# This file sets the following variables:
+# karuta_arm_control_FOUND - Always TRUE.
+# karuta_arm_control_INCLUDE_DIRS - Directories containing the karuta_arm_control include files.
+# karuta_arm_control_IDL_DIRS - Directories containing the karuta_arm_control IDL files.
+# karuta_arm_control_LIBRARIES - Libraries needed to use karuta_arm_control.
+# karuta_arm_control_DEFINITIONS - Compiler flags for karuta_arm_control.
+# karuta_arm_control_VERSION - The version of karuta_arm_control found.
+# karuta_arm_control_VERSION_MAJOR - The major version of karuta_arm_control found.
+# karuta_arm_control_VERSION_MINOR - The minor version of karuta_arm_control found.
+# karuta_arm_control_VERSION_REVISION - The revision version of karuta_arm_control found.
+# karuta_arm_control_VERSION_CANDIDATE - The candidate version of karuta_arm_control found.
+
+message(STATUS "Found karuta_arm_control-@PROJECT_VERSION@")
+set(karuta_arm_control_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(karuta_arm_control_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(karuta_arm_control_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(karuta_arm_control_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(karuta_arm_control_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(karuta_arm_control_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(karuta_arm_control_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(karuta_arm_control_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(karuta_arm_control_VERSION @PROJECT_VERSION@)
+set(karuta_arm_control_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(karuta_arm_control_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(karuta_arm_control_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(karuta_arm_control_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

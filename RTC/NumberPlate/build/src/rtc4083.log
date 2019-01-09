@@ -1,0 +1,15 @@
+[0m[34mDec 25 21:47:05.989 INFO: manager: [0m1.1.2
+[0m[34mDec 25 21:47:05.989 INFO: manager: [0mCopyright (C) 2003-2014
+[0m[34mDec 25 21:47:05.989 INFO: manager: [0m  Noriaki Ando
+[0m[34mDec 25 21:47:05.989 INFO: manager: [0m  Intelligent Systems Research Institute, AIST
+[0m[34mDec 25 21:47:05.989 INFO: manager: [0mManager starting.
+[0m[34mDec 25 21:47:05.989 INFO: manager: [0mStarting local logging.
+[0m[33mDec 25 21:47:05.996 WARNING: NamingOnCorba: [0mNo endpoint for the CORBA naming service (localhost) was found.
+[0m[34mDec 25 21:47:05.996 INFO: NamingManager: [0mNameServer connection succeeded: corba/localhost
+[0m[34mDec 25 21:47:05.996 INFO: ManagerServant: [0mMaster manager not found
+[0m[33mDec 25 21:48:08.343 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: 
+[0m[33mDec 25 21:48:08.344 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+[0m[35m12月 25 21:49:53.772 ERROR: periodic_ec: [0mThe component is not responding.
+[0m[35m12月 25 21:49:53.772 ERROR: periodic_ec: [0mThe component could not be deactivated.
+[0m[35m12月 25 21:52:40.959 ERROR: periodic_ec: [0mThe component is not responding.
+[0m[35m12月 25 21:52:40.959 ERROR: periodic_ec: [0mThe component could not be deactivated.

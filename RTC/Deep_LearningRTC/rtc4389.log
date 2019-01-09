@@ -1,0 +1,31 @@
+2018-12-22 08:39:33,493 manager INFO 1.1.0
+2018-12-22 08:39:33,494 manager INFO Copyright (C) 2003-2010
+2018-12-22 08:39:33,494 manager INFO   Noriaki Ando
+2018-12-22 08:39:33,494 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-22 08:39:33,494 manager INFO Manager starting.
+2018-12-22 08:39:33,494 manager INFO Starting local logging.
+2018-12-22 08:39:33,497 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-22 08:39:33,499 ManagerServant INFO Master manager not found
+2018-12-22 08:39:33,499 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-22 08:39:33,501 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-22 08:39:33,502 ec_base INFO setRate(1000000.000000) done
+2018-12-22 08:39:33,503 ec_base INFO setRate(1000.000000) done
+2018-12-22 08:39:33,503 rtobject INFO 1 execution context was created.
+2018-12-22 08:39:33,506 rtobject INFO Initial active configuration set is default.
+2018-12-22 08:39:37,648 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-22 08:39:37,648 SdoServiceAdmin ERROR type  already exists.
+2018-12-22 08:39:37,651 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-22 08:39:37,651 SdoServiceAdmin ERROR type 48a84691-73c5-4136-a961-62452090f4a8 already exists.
+2018-12-22 08:39:55,859 ec_base WARNING The component is not responding.
+2018-12-22 08:39:55,859 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-22 08:39:56,971 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 394, in onExecute
+    cv2.waitKey('1')
+TypeError: an integer is required
+
+2018-12-22 08:40:00,973 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 08:42:53,698 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 08:42:53,714 ec_worker WARNING ExecutionContext is already stopped.
+2018-12-22 08:42:53,715 ec_base ERROR Invoking on_shutdown() for each RTC failed.

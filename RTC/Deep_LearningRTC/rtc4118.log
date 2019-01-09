@@ -1,0 +1,38 @@
+2018-12-21 13:01:12,361 manager INFO 1.1.0
+2018-12-21 13:01:12,361 manager INFO Copyright (C) 2003-2010
+2018-12-21 13:01:12,361 manager INFO   Noriaki Ando
+2018-12-21 13:01:12,361 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-21 13:01:12,361 manager INFO Manager starting.
+2018-12-21 13:01:12,361 manager INFO Starting local logging.
+2018-12-21 13:01:12,364 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-21 13:01:12,366 ManagerServant INFO Master manager not found
+2018-12-21 13:01:12,366 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-21 13:01:12,368 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-21 13:01:12,369 ec_base INFO setRate(1000000.000000) done
+2018-12-21 13:01:12,370 ec_base INFO setRate(1000.000000) done
+2018-12-21 13:01:12,370 rtobject INFO 1 execution context was created.
+2018-12-21 13:01:12,373 rtobject INFO Initial active configuration set is default.
+2018-12-21 13:01:16,145 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-21 13:01:16,146 SdoServiceAdmin ERROR type  already exists.
+2018-12-21 13:01:16,148 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-21 13:01:16,148 SdoServiceAdmin ERROR type a955478e-c4c8-489f-a543-d1cf0e38eb48 already exists.
+2018-12-21 13:01:25,524 ec_base WARNING The component is not responding.
+2018-12-21 13:01:26,102 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-21 13:01:26,504 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 388, in onExecute
+    objParam = detect(self, net, img, readData, self._CLASSES, self._recognitionRate[0])
+TypeError: detect() takes exactly 5 arguments (6 given)
+
+2018-12-21 13:01:32,627 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-21 13:01:43,826 ec_base WARNING The component is not responding.
+2018-12-21 13:01:43,827 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-21 13:01:44,127 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 388, in onExecute
+    objParam = detect(self, net, img, readData, self._CLASSES, self._recognitionRate[0])
+TypeError: detect() takes exactly 5 arguments (6 given)
+
+2018-12-21 13:01:56,634 ec_worker ERROR State of the RTC is not ACTIVE_STATE.

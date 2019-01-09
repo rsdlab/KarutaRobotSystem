@@ -1,0 +1,326 @@
+2018-12-22 08:58:11,883 manager INFO 1.1.0
+2018-12-22 08:58:11,884 manager INFO Copyright (C) 2003-2010
+2018-12-22 08:58:11,884 manager INFO   Noriaki Ando
+2018-12-22 08:58:11,884 manager INFO   Intelligent Systems Research Institute, AIST
+2018-12-22 08:58:11,884 manager INFO Manager starting.
+2018-12-22 08:58:11,884 manager INFO Starting local logging.
+2018-12-22 08:58:11,884 manager DEBUG corba.args: -ORBgiopMaxMsgSize 4194304
+2018-12-22 08:58:11,884 manager DEBUG corba.endpoint: 
+2018-12-22 08:58:11,884 manager DEBUG manager.is_master: NO
+2018-12-22 08:58:11,884 manager DEBUG corba.id: omniORB
+2018-12-22 08:58:11,887 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2018-12-22 08:58:11,888 ManagerServant DEBUG corbaloc: corbaloc:iiop:localhost:2810/manager
+2018-12-22 08:58:11,889 ManagerServant DEBUG Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerServant.py", line 944, in findManager
+    mgr = mobj._narrow(RTM.Manager)
+  File "/usr/lib/python2.7/dist-packages/omniORB/CORBA.py", line 798, in _narrow
+    return _omnipy.narrow(self, repoId, 1)
+TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+
+2018-12-22 08:58:11,889 ManagerServant INFO Master manager not found
+2018-12-22 08:58:11,889 LocalServiceAdmin INFO All the local services are enabled.
+2018-12-22 08:58:11,889 LocalServiceAdmin DEBUG Available services: 
+2018-12-22 08:58:11,889 manager DEBUG LocalServiceAdmin's properties:
+2018-12-22 08:58:11,889 manager DEBUG - enabled_services: ALL
+
+2018-12-22 08:58:11,890 SdoServiceAdmin DEBUG sdo.service.provider.enabled_services: 
+2018-12-22 08:58:11,890 SdoServiceAdmin DEBUG sdo.service.provider.available_services: 
+2018-12-22 08:58:11,890 SdoServiceAdmin DEBUG sdo.service.consumer.enabled_services: 
+2018-12-22 08:58:11,890 SdoServiceAdmin DEBUG sdo.service.consumer.available_services: 
+2018-12-22 08:58:11,891 inImage DEBUG Port name: inImage
+2018-12-22 08:58:11,891 inImage DEBUG setting port.port_type: DataInPort
+2018-12-22 08:58:11,891 inImage DEBUG setting port.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 08:58:11,891 inString DEBUG Port name: inString
+2018-12-22 08:58:11,891 inString DEBUG setting port.port_type: DataInPort
+2018-12-22 08:58:11,891 inString DEBUG setting port.data_type: IDL:RTC/TimedString:1.0
+2018-12-22 08:58:11,891 outImage DEBUG Port name: outImage
+2018-12-22 08:58:11,891 outImage DEBUG setting port.port_type: DataOutPort
+2018-12-22 08:58:11,891 outImage DEBUG setting dataport.data_type: IDL:Img/TimedCameraImage:1.0
+2018-12-22 08:58:11,891 outImage DEBUG available subscription_type: flush, new, periodic
+2018-12-22 08:58:11,891 outObjectParam DEBUG Port name: outObjectParam
+2018-12-22 08:58:11,891 outObjectParam DEBUG setting port.port_type: DataOutPort
+2018-12-22 08:58:11,891 outObjectParam DEBUG setting dataport.data_type: IDL:ObjectRecognition/TimedObjectParamSeq:1.0
+2018-12-22 08:58:11,891 outObjectParam DEBUG available subscription_type: flush, new, periodic
+2018-12-22 08:58:11,892 outFlag DEBUG Port name: outFlag
+2018-12-22 08:58:11,892 outFlag DEBUG setting port.port_type: DataOutPort
+2018-12-22 08:58:11,892 outFlag DEBUG setting dataport.data_type: IDL:RTC/TimedLong:1.0
+2018-12-22 08:58:11,892 outFlag DEBUG available subscription_type: flush, new, periodic
+2018-12-22 08:58:11,892 manager INFO Component type conf file: Deep_LearningRTC.conf loaded.
+2018-12-22 08:58:11,892 manager DEBUG - exec_cxt
+  - periodic
+    - rate: 1000.0
+
+2018-12-22 08:58:11,893 rtobject DEBUG getContextOptions()
+2018-12-22 08:58:11,893 rtobject DEBUG Global EC options are specified.
+2018-12-22 08:58:11,893 rtobject DEBUG - type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 08:58:11,893 rtobject DEBUG Copying inherited EC options.
+2018-12-22 08:58:11,893 rtobject DEBUG No component specific EC specified.
+2018-12-22 08:58:11,893 periodic_ecprofile DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 08:58:11,893 ec_base INFO setRate(1000000.000000) done
+2018-12-22 08:58:11,894 ec_base DEBUG Actual rate: 0 [sec], 1 [usec]
+2018-12-22 08:58:11,894 rtobject DEBUG EC (PeriodicExecutionContext) created.
+2018-12-22 08:58:11,894 ec_base DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 08:58:11,894 ec_base INFO setRate(1000.000000) done
+2018-12-22 08:58:11,894 ec_base DEBUG Transition Mode: sync_transition = YES
+2018-12-22 08:58:11,894 ec_base DEBUG Configuration sync_activation not found.
+2018-12-22 08:58:11,894 ec_base DEBUG Configuration sync_deactivation not found.
+2018-12-22 08:58:11,894 ec_base DEBUG Configuration sync_reset not found.
+2018-12-22 08:58:11,894 ec_base DEBUG Timeout (transition_timeout): 0.500000 [s]
+2018-12-22 08:58:11,894 ec_base DEBUG Configuration activation_timeout not found.
+2018-12-22 08:58:11,894 ec_base DEBUG Configuration deactivation_timeout not found.
+2018-12-22 08:58:11,894 ec_base DEBUG Configuration reset_timeout not found.
+2018-12-22 08:58:11,894 ec_base DEBUG ExecutionContext's configurations:
+2018-12-22 08:58:11,894 ec_base DEBUG Exec rate   : 1000.000000 [Hz]
+2018-12-22 08:58:11,894 ec_base DEBUG Activation  : Sync = YES, Timeout = 0.500000
+2018-12-22 08:58:11,894 ec_base DEBUG Deactivation: Sync = YES, Timeout = 0.500000
+2018-12-22 08:58:11,894 ec_base DEBUG Reset       : Sync = YES, Timeout = 0.500000
+2018-12-22 08:58:11,894 periodic_ecprofile DEBUG - sync_transition: YES
+- transition_timeout: 0.5
+- type: PeriodicExecutionContext
+- rate: 1000.0
+
+2018-12-22 08:58:11,894 ec_worker DEBUG bindContext returns id = 0
+2018-12-22 08:58:11,894 ec_worker DEBUG bindComponent() succeeded.
+2018-12-22 08:58:11,894 rtobject INFO 1 execution context was created.
+2018-12-22 08:58:11,894 rtobject DEBUG Calling onInitialize().
+2018-12-22 08:58:11,895 inImage DEBUG single buffer mode.
+2018-12-22 08:58:11,895 inImage DEBUG available providers: corba_cdr
+2018-12-22 08:58:11,895 inImage DEBUG dataflow_type push is supported
+2018-12-22 08:58:11,895 inImage DEBUG available consumers: corba_cdr
+2018-12-22 08:58:11,896 inString DEBUG single buffer mode.
+2018-12-22 08:58:11,896 inString DEBUG available providers: corba_cdr
+2018-12-22 08:58:11,896 inString DEBUG dataflow_type push is supported
+2018-12-22 08:58:11,896 inString DEBUG available consumers: corba_cdr
+2018-12-22 08:58:11,896 outImage DEBUG dataflow_type pull is supported
+2018-12-22 08:58:11,897 outObjectParam DEBUG dataflow_type pull is supported
+2018-12-22 08:58:11,898 outFlag DEBUG dataflow_type pull is supported
+2018-12-22 08:58:11,898 rtobject DEBUG onInitialize() succeeded.
+2018-12-22 08:58:11,898 rtobject DEBUG Active configuration set: default exists.
+2018-12-22 08:58:11,898 rtobject INFO Initial active configuration set is default.
+2018-12-22 08:58:11,898 rtobject DEBUG on_initialize() was properly done.
+2018-12-22 08:58:11,898 rtobject DEBUG EC[0] starting.
+2018-12-22 08:58:11,898 ec_worker DEBUG 1 components started.
+2018-12-22 08:58:16,168 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:16,989 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:16,993 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2018-12-22 08:58:16,993 SdoServiceAdmin ERROR type  already exists.
+2018-12-22 08:58:16,996 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2018-12-22 08:58:16,996 SdoServiceAdmin ERROR type 53488274-f3ad-426e-9751-6d2ed24ebdaf already exists.
+2018-12-22 08:58:17,668 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:18,645 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:19,197 inImage DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 08:58:19,197 inImage DEBUG interface_type: corba_cdr
+2018-12-22 08:58:19,197 inImage DEBUG provider created
+2018-12-22 08:58:19,198 inImage DEBUG publishInterfaces() successfully finished.
+2018-12-22 08:58:19,199 inImage DEBUG dataflow_type = push .... do nothing
+2018-12-22 08:58:19,199 inImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:58:19,669 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:20,638 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:21,635 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:22,672 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:23,667 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:24,675 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:25,672 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:26,621 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:27,479 inString DEBUG dataflow_type = push .... create PushConnector
+2018-12-22 08:58:27,479 inString DEBUG interface_type: corba_cdr
+2018-12-22 08:58:27,479 inString DEBUG provider created
+2018-12-22 08:58:27,480 inString DEBUG publishInterfaces() successfully finished.
+2018-12-22 08:58:27,480 inString DEBUG dataflow_type = push .... do nothing
+2018-12-22 08:58:27,480 inString DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:58:27,674 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:28,673 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:29,640 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:30,668 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:31,673 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:32,678 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:32,791 outImage DEBUG interface_type: corba_cdr
+2018-12-22 08:58:32,791 outImage DEBUG consumer created
+2018-12-22 08:58:32,792 outImage DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:58:33,642 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:34,675 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:35,623 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:36,137 outFlag DEBUG interface_type: corba_cdr
+2018-12-22 08:58:36,137 outFlag DEBUG consumer created
+2018-12-22 08:58:36,138 outFlag DEBUG subscribeInterfaces() successfully finished.
+2018-12-22 08:58:36,651 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:37,412 ec_worker DEBUG Component found in the EC.
+2018-12-22 08:58:37,413 ec_worker DEBUG Component is in INACTIVE state. Going to ACTIVE state.
+2018-12-22 08:58:37,413 ec_worker DEBUG activateComponent() done.
+2018-12-22 08:58:37,413 ec_base DEBUG Synchronous activation mode. Waiting for the RTC to be ACTIVE state. 
+2018-12-22 08:58:37,413 ec_base DEBUG Timeout is 0.500000 [s] (1000.000000 [s] in 500 times)
+2018-12-22 08:58:38,134 ec_base DEBUG Waiting to be ACTIVE state. 0.720581 [s] slept (0/500)
+2018-12-22 08:58:38,685 ec_base WARNING The component is not responding.
+2018-12-22 08:58:38,685 ec_base ERROR Unknown error: Invalid state transition.
+2018-12-22 08:58:38,708 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:38,744 ec_worker DEBUG getComponentState() = INACTIVE_STATE done
+2018-12-22 08:58:39,110 inImage DEBUG activate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage f601fb0c-65d8-4d0a-9e05-5012337170c2
+2018-12-22 08:58:39,110 inString DEBUG activate connector: ReadString0.outstring_Deep_LearningRTC0.inString 6089c18e-5648-4a66-826c-16aff1cfa8d7
+2018-12-22 08:58:39,111 inImage DEBUG isNew() = True, readable data: 1
+2018-12-22 08:58:39,111 inImage DEBUG data read succeeded
+2018-12-22 08:58:39,112 inString DEBUG data read succeeded
+2018-12-22 08:58:39,112 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1560, in on_execute
+    ret = self.onExecute(ec_id)
+  File "Deep_LearningRTC.py", line 391, in onExecute
+    objParam = detect(net, img, readData, self._CLASSES, self._recognitionRate[0])
+NameError: global name 'detect' is not defined
+
+2018-12-22 08:58:39,112 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage f601fb0c-65d8-4d0a-9e05-5012337170c2
+2018-12-22 08:58:39,112 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString 6089c18e-5648-4a66-826c-16aff1cfa8d7
+2018-12-22 08:58:39,747 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:40,743 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:41,743 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:42,747 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:43,137 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 08:58:43,795 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:44,790 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:45,794 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:46,798 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:47,793 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:48,802 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:49,794 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:50,788 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:51,776 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:52,797 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:53,792 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:54,798 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:55,795 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:56,796 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:57,795 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:58,796 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:58:59,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:00,793 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:01,791 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:02,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:03,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:04,810 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:05,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:06,791 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:07,794 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:08,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:09,798 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:10,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:11,808 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:12,803 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:13,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:14,803 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:15,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:16,800 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:17,804 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:18,763 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:19,800 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:20,796 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:21,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:22,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:23,766 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:24,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:25,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:26,772 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:27,766 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:28,755 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:29,820 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:30,807 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:31,802 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:32,797 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:33,806 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:34,806 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:35,773 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:36,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:37,790 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:38,802 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:39,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:40,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:41,800 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:42,803 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:43,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:44,803 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:45,806 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:46,797 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:47,792 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:48,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:49,792 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:50,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:51,767 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:52,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:53,803 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:54,777 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:55,753 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:56,793 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:57,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:58,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 08:59:59,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:00,797 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:01,770 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:02,791 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:03,794 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:04,793 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:05,804 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:06,802 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:07,798 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:08,804 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:09,816 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:10,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:11,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:12,802 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:13,804 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:14,760 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:15,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:16,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:17,812 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:18,806 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:19,801 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:20,805 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:21,806 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:22,811 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:23,831 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:24,802 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:25,799 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:26,814 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:27,808 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:28,813 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:29,814 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:30,809 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:31,809 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:32,812 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:33,813 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:34,806 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:35,812 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:36,807 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:37,812 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:38,811 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:39,814 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:40,810 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:41,803 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:42,800 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:43,809 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:44,807 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:45,810 ec_worker DEBUG getComponentState() = ERROR_STATE done
+2018-12-22 09:00:46,728 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-12-22 09:00:46,729 ec_base DEBUG Thread terminated.
+2018-12-22 09:00:46,730 inImage DEBUG deactivate connector: WebCamera0.CameraImage_Deep_LearningRTC0.inImage f601fb0c-65d8-4d0a-9e05-5012337170c2
+2018-12-22 09:00:46,730 inString DEBUG deactivate connector: ReadString0.outstring_Deep_LearningRTC0.inString 6089c18e-5648-4a66-826c-16aff1cfa8d7
+2018-12-22 09:00:46,732 outFlag DEBUG disconnecting 1 connections.
+2018-12-22 09:00:46,733 OutPortConnector DEBUG delete publisher
+2018-12-22 09:00:46,733 OutPortConnector DEBUG delete consumer
+2018-12-22 09:00:46,734 OutPortConnector DEBUG delete buffer
+2018-12-22 09:00:46,736 outObjectParam DEBUG disconnecting 0 connections.
+2018-12-22 09:00:46,739 outImage DEBUG disconnecting 1 connections.
+2018-12-22 09:00:46,740 OutPortConnector DEBUG delete publisher
+2018-12-22 09:00:46,740 OutPortConnector DEBUG delete consumer
+2018-12-22 09:00:46,740 OutPortConnector DEBUG delete buffer
+2018-12-22 09:00:46,742 inString DEBUG disconnecting 1 connections.
+2018-12-22 09:00:46,746 inImage DEBUG disconnecting 1 connections.
+2018-12-22 09:00:46,747 ec_worker WARNING ExecutionContext is already stopped.
+2018-12-22 09:00:46,748 ec_base ERROR Invoking on_shutdown() for each RTC failed.
+2018-12-22 09:00:46,748 rtobject DEBUG Cleanup on Manager
+2018-12-22 09:00:46,751 manager DEBUG No pending works of ORB. Shutting down POA and ORB.
+2018-12-22 09:00:46,751 manager DEBUG POA Manager was deactivated.
+2018-12-22 09:00:46,752 manager DEBUG POA was destroyed.
+2018-12-22 09:00:46,752 manager DEBUG ORB was shutdown.
